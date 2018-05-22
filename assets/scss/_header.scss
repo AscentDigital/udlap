@@ -21,6 +21,9 @@
 			align-items: center; 
 		}
 	}
+	&.inner:before{ 
+		height: 287px;
+	}
 	&:before{
 		content: '';
 		position: absolute;

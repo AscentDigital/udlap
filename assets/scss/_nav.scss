@@ -34,6 +34,9 @@ nav{
 					width: 18px;
 				}
 			}
+			@include mobile(){
+				display: none;
+			}
 		}
 		.nav-block{
 			display: flex;
@@ -43,6 +46,9 @@ nav{
 			align-items: baseline;
 			height: calc(100% - 96px);
 			position: relative;
+			@include mobile(){
+				display: none;
+			}
 			> div{ 
 			    font-size: 13px; 
 			    line-height: 16px;

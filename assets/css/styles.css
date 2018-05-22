@@ -71,6 +71,11 @@ nav .nav-proper .social-block-menu a {
     width: 18px;
   }
 }
+@media (max-width: 768px) {
+  nav .nav-proper .social-block-menu {
+    display: none;
+  }
+}
 nav .nav-proper .nav-block {
   display: flex;
   flex-direction: row;
@@ -79,6 +84,11 @@ nav .nav-proper .nav-block {
   align-items: baseline;
   height: calc(100% - 96px);
   position: relative;
+}
+@media (max-width: 768px) {
+  nav .nav-proper .nav-block {
+    display: none;
+  }
 }
 nav .nav-proper .nav-block > div {
   font-size: 13px;
@@ -330,6 +340,9 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+.banner.inner:before {
+  height: 287px;
 }
 .banner:before {
   content: '';
