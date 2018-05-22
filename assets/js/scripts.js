@@ -35,9 +35,9 @@ function hideMobileNav(){
     //     'overflow': 'auto'
     // });
     $( '.mobile-nav' ).animate({
-        'right':'-300px'
+        'right':'-500px'
     }, {
-        duration: 400,
+        duration: 500,
         easing: 'easeOutQuart',
         complete: function() {
             $('.mobile-nav').hide();
