@@ -80,8 +80,7 @@ nav .nav-proper .nav-block {
   height: calc(100% - 96px);
   position: relative;
 }
-nav .nav-proper .nav-block a {
-  color: #FFFFFF;
+nav .nav-proper .nav-block > div {
   font-size: 13px;
   line-height: 16px;
   font-family: "Raleway", sans-serif;
@@ -89,13 +88,57 @@ nav .nav-proper .nav-block a {
   text-transform: uppercase;
   padding: 10px 5px;
   border-bottom: 0px;
+  position: relative;
+  border-left: 2px dashed transparent;
 }
-nav .nav-proper .nav-block a.active {
-  border-bottom: 4px solid;
+nav .nav-proper .nav-block > div a {
+  color: #FFFFFF;
 }
-nav .nav-proper .nav-block a:hover {
+nav .nav-proper .nav-block > div.active {
+  border-bottom: 4px solid #FFF;
+}
+nav .nav-proper .nav-block > div:hover, nav .nav-proper .nav-block > div:active, nav .nav-proper .nav-block > div:focus {
   text-decoration: none;
-  border-bottom: 4px solid;
+  border-bottom: 4px solid #FFF;
+}
+nav .nav-proper .nav-block > div.opened {
+  border-left: 2px solid #FFF;
+}
+nav .nav-proper .nav-block > div.opened a {
+  text-decoration: none;
+}
+nav .nav-proper .nav-block .has-sub .submenu {
+  display: none;
+  position: absolute;
+  min-width: 145px;
+  top: 35px;
+  left: -2px;
+  padding: 10px 10px 10px 25px;
+  background: #FFF;
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+}
+nav .nav-proper .nav-block .has-sub .submenu a {
+  color: #000;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+nav .nav-proper .nav-block .has-sub .submenu a:not(:last-child) {
+  margin-bottom: 10px;
+}
+nav .nav-proper .nav-block .has-sub .submenu a:hover {
+  color: #FF6A00;
+}
+nav .nav-proper .nav-block .has-sub .submenu a:hover:before {
+  font-family: FontAwesome;
+  content: '\f04b';
+  color: #FF6A00;
+  position: absolute;
+  left: -15px;
+  top: 0px;
 }
 nav .nav-proper .nav-block:before {
   content: '';

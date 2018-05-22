@@ -43,8 +43,7 @@ nav{
 			align-items: baseline;
 			height: calc(100% - 96px);
 			position: relative;
-			a{
-				color: #FFFFFF;
+			> div{ 
 			    font-size: 13px; 
 			    line-height: 16px;
 			    font-family: $rale;
@@ -52,13 +51,60 @@ nav{
 			    text-transform: uppercase;
 			    padding: 10px 5px; 
 			    border-bottom: 0px; 
+			    position: relative;
+			    border-left: 2px dashed transparent;
+			    a{
+			    	color: #FFFFFF;
+			    }
 			    &.active{
-			    	border-bottom: 4px solid; 
+			    	border-bottom: 4px solid #FFF; 
 			    }
-			    &:hover{ 
+			    &:hover, &:active, &:focus{ 
 			    	text-decoration: none;
-			    	border-bottom: 4px solid; 
+			    	border-bottom: 4px solid #FFF;  
 			    }
+			    &.opened{
+			    	border-left: 2px solid #FFF;
+			    	a{
+			    		text-decoration: none;
+			    	}
+			    }
+			}
+			.has-sub{
+				.submenu{ 
+					display: none;
+					position: absolute;
+				    min-width: 145px;
+				    top: 35px;
+				    left: -2px;
+				    padding: 10px 10px 10px 25px;
+				    background: #FFF;
+				    font-size: 12px;
+				    font-family: "Raleway", sans-serif;
+				    flex-direction: column;
+				    font-family: $rale;
+				    a{
+				    	color: #000;
+				    	width: 100%;
+				    	display: block;
+				    	position: relative;
+				    	&:not(:last-child){
+				    		 margin-bottom: 10px;
+				    	}
+				    	&:hover{
+				    		color: $orange;
+				    		&:before{
+				    			font-family: FontAwesome;
+				    			content: '\f04b';
+				    			color: $orange;
+				    			position: absolute;
+				    			left: -15px;
+				    			top: 0px;
+				    		}
+				    	}
+
+				    }
+				}
 			}
 			&:before{
 				content: '';

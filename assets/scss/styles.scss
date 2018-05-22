@@ -74,11 +74,11 @@ body, body > *, body > * > *{
 		.headliner{
 			display: block;
 			color: #3D3D3D;
-		    font-size: 50px;
-		    text-align: center;
-		    line-height: 50px;
-		    font-family: $rale;
-		    font-weight: 900;
+			font-size: 50px;
+			text-align: center;
+			line-height: 50px;
+			font-family: $rale;
+			font-weight: 900;
 		}
 	}
 }
@@ -90,21 +90,21 @@ body, body > *, body > * > *{
 .brochure-proper{
 	position: absolute;
 	right: 135px;
-    top: 25px;
-    @include tablet(){
-    	right: 80px;
-    	top: 40px;
-    }
-    @include mobile(){
+	top: 25px;
+	@include tablet(){
+		right: 80px;
+		top: 40px;
+	}
+	@include mobile(){
 		top: 285px;
-	    width: 92%;
-	    left: 10px;
+		width: 92%;
+		left: 10px;
 
 	}
 	@media (max-width: 410px){
 		img{ 
-	    	    width: 100%;
-	    }
+			width: 100%;
+		}
 	}
 }
 
@@ -112,10 +112,10 @@ body, body > *, body > * > *{
 .gray-block{
 	min-height: 500px;
 	background: transparent url(../img/bg-light.jpg?crc=117488147) no-repeat left top;
-  background-size: cover;
-  position: relative;
+	background-size: cover;
+	position: relative;
 }
- 
+
 @import 'explore';
 @import 'gallery';
 
