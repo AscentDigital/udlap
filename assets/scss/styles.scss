@@ -119,9 +119,4 @@ body, body > *, body > * > *{
 @import 'explore';
 @import 'gallery';
 
-footer{
-	min-height: 610px;
-	position: relative;
-	width: 100%;
-	background: #254847;
-}
+@import 'footer';
