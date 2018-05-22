@@ -548,7 +548,7 @@ a:hover {
     padding: 10px;
     left: -40px;
     top: -10px;
-    width: calc(100% + 40px);
+    width: calc(100% + 25px);
   }
 }
 .inquiry-block .form-block .input-proper {
@@ -1031,7 +1031,7 @@ a:hover {
     padding: 10px;
     left: -40px;
     top: -10px;
-    width: calc(100% + 40px);
+    width: calc(100% + 25px);
   }
 }
 .inquiry-block .form-block .input-proper {
@@ -1415,6 +1415,11 @@ footer .tagline {
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 768px) {
+  footer .tagline > img {
+    width: 79%;
+  }
+}
 footer .tagline:before {
   content: '';
   position: absolute;
@@ -1454,6 +1459,11 @@ footer .f-logo {
   width: 100%;
   position: block;
 }
+@media (max-width: 768px) {
+  footer .f-logo > img {
+    width: 79%;
+  }
+}
 footer .f-nav {
   padding: 15px 0px;
   display: flex;
@@ -1491,6 +1501,8 @@ footer .footer {
   justify-content: space-around;
   align-items: center;
   min-height: 95px;
+  text-align: center;
+  padding: 0px 20px;
 }
 footer .footer p {
   color: #FF6500;

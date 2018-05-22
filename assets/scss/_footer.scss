@@ -18,6 +18,11 @@ footer{
 			size: cover;
 			position: center;
 		} 
+		@include mobile(){
+			> img{
+				    width: 79%;
+			}
+		}
 		&:before{
 			content: '';
 			position: absolute;
@@ -48,6 +53,11 @@ footer{
 		padding-bottom: 60px;
 		width: 100%;
 		position: block;
+		@include mobile(){
+			> img{
+				    width: 79%;
+			}
+		}
 	}
 
 	.f-nav{
@@ -86,6 +96,8 @@ footer{
 		justify-content: space-around;
 		align-items: center;
 		min-height: 95px;
+		text-align: center;
+		padding: 0px 20px;
 		p{
 			color: #FF6500;
 			font-size: 14px;
