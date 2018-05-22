@@ -360,6 +360,135 @@ a:hover {
   left: 0px;
 }
 
+.mobile-nav-trigger {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  color: #FFF;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 5000;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: #FF6A00;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+  .mobile-nav-trigger {
+    display: flex;
+  }
+}
+.mobile-nav-trigger:hover {
+  cursor: pointer;
+}
+
+.mobile-nav-close-trigger {
+  position: absolute;
+  top: 25px;
+  left: -20px;
+  color: #FFF;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 7000;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #FF6A00;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+}
+.mobile-nav-close-trigger:hover {
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background: #254847;
+  right: -300px;
+  top: 0px;
+  z-index: 6000;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+}
+.mobile-nav .social-block-menu {
+  height: 100px;
+  width: 100%;
+  background-image: url("../img/studyinmx2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: stretch;
+}
+.mobile-nav .social-block-menu > img {
+  position: absolute;
+  top: 5px;
+  width: 70%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.mobile-nav .social-block-menu a {
+  margin-bottom: 10px;
+  margin-left: 0px;
+  width: 18px;
+}
+.mobile-nav .nav-block {
+  height: calc(100% - 100px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.mobile-nav .nav-block > div {
+  width: 100%;
+  padding: 10px 30px;
+  font-size: 13px;
+  line-height: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 0px;
+  position: relative;
+}
+.mobile-nav .nav-block > div.active:before {
+  font-family: FontAwesome;
+  content: '\f04b';
+  color: #FF6A00;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.mobile-nav .nav-block > div:hover:before, .mobile-nav .nav-block > div:active:before {
+  font-family: FontAwesome;
+  content: '\f04b';
+  color: #FF6A00;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.mobile-nav .nav-block > div > a {
+  color: #FFF;
+  position: relative;
+}
+.mobile-nav .nav-block > div > .collapsing {
+  opacity: 0;
+}
+.mobile-nav .nav-block > div > .collapse a {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  color: #FFF;
+}
+
 /* White block */
 .white-block {
   min-height: 690px;

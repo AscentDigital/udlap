@@ -40,3 +40,141 @@
 		left: 0px;
 	}
 }
+
+
+.mobile-nav-trigger{
+	display: none;
+	@include mobile(){
+		display: flex;
+	}
+	position: fixed;
+	top: 30px;
+	right: 20px;
+	color: #FFF;
+	background: rgba(255,255,255,0.9);
+	z-index: 5000;
+	width: 60px;
+	height: 60px;
+	border-radius: 100px; 
+	justify-content: center;
+	align-items: center;
+	font-size: 35px;
+	color: $orange;
+	box-shadow: 0px 0px 35px rgba(0,0,0,0.3);
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.mobile-nav-close-trigger{
+	position: absolute;
+	    top: 25px;
+    left: -20px;
+	color: #FFF;
+	background: rgba(255,255,255,0.9);
+	z-index: 7000;
+	width: 40px;
+	height: 40px;
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	color: $orange;
+	box-shadow: 0px 0px 35px rgba(0,0,0,0.3);
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.mobile-nav{
+	display: none;
+	position: fixed;
+    width: 300px;
+    height: 100vh;
+    background: #254847;
+    right: -300px;
+    top: 0px;
+    z-index: 6000;
+    box-shadow: 0px 0px 35px rgba(0,0,0,0.3);
+    .social-block-menu{
+    	height: 100px;
+    	width: 100%;
+    	background:{
+    		image: url('../img/studyinmx2.jpg');
+    		size: cover;
+			position: center;
+
+    	}
+    	display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: flex-end;
+		align-content: stretch;
+		> img{
+			position: absolute;
+			top: 5px;
+			width: 70%;
+			@include absolute_center();
+		}
+    	a{  
+    		margin-bottom: 10px;
+			margin-left: 0px;
+			width: 18px; 
+		}
+    }
+    .nav-block{
+    	height: calc(100% - 100px);
+    	overflow-y: auto;
+    	overflow-x: hidden;
+    	> div{
+    		width: 100%; 
+    		padding: 10px 30px;
+    		font-size: 13px; 
+			    line-height: 16px;
+			    font-family: $rale;
+			    font-weight: 600;
+			    text-transform: uppercase; 
+
+			    border-bottom: 0px; 
+			    position: relative;
+			    $self: &;
+			    &.active{
+					&:before{
+			    			font-family: FontAwesome;
+			    			content: '\f04b';
+			    			color: $orange;
+			    			position: absolute;
+			    			left: 10px;
+			    			top: 10px;
+			    		}
+		    	}
+		    	&:hover, &:active{
+					&:before{
+			    			font-family: FontAwesome;
+			    			content: '\f04b';
+			    			color: $orange;
+			    			position: absolute;
+			    			left: 10px;
+			    			top: 10px;
+			    		}
+		    	}
+			    > a{
+			    	color: #FFF;
+			    	position: relative; 
+			    }
+			    > .collapsing{
+			    	opacity: 0;
+			    }
+			    > .collapse{
+			    	a{
+			    		display: block;
+			    		width: 100%; 
+			    		padding: 10px 20px; 
+			    		color: #FFF;
+			    	}
+			    }
+    	}
+    }
+}
