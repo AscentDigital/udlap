@@ -81,7 +81,7 @@
           </div>
           <div class="nav-block"> 
             <div class="active"> 
-              <a href="http://udlap.seventy4media.com/our-institution/">HOME</a>  
+              <a href="http://udlap.seventy4media.com/">HOME</a>  
             </div>
             <div class="has-sub"> 
               <a href="javascript:void(0);">ABOUT</a>
