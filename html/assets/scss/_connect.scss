@@ -1,0 +1,179 @@
+.gridpanel{
+	&-proper{
+		position: relative; 
+		padding-bottom: 100px;
+	}
+	
+	&-block{
+		width: calc(100% - 150px);
+		margin: 80px 200px 50px 40px; 
+		border: $border;
+		position: relative; 
+		padding: 40px 50px;
+		display: flex;
+		@include tablet(){
+			flex-direction: column;
+			width: 100%;
+			margin: 80px 0px;
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			height: 48px;
+			width: 48px;
+			background:{
+				image: url('../img/mas.jpg');
+				size: cover;
+			}
+			top: -24px;
+			left: -24px;
+		}
+		.copy-block{
+			width: 80%;
+			position: relative;
+			margin-right: 10px;
+			&.grid-md:before{
+				top: -10px;
+				right: 5px;
+			}
+			@include tablet(){
+				width: 100%;
+			}
+			.title{
+				line-height: 37px;
+				color: #3D3D3D;
+				font-size: 37px;
+				text-transform: uppercase;
+				text-align: left;
+				font-family: $rale;
+				font-weight: 900;
+				padding-bottom: 15px; 
+				margin-bottom: 15px;
+				position: relative;
+				&:before{
+					content: '';
+					position: absolute;
+					left: 0px;
+					bottom: 0px;
+					width: 100px;
+					height: 5px;
+					background: $teal;
+				}
+			}
+			.copy{
+				width: 90%;
+				line-height: 29px;
+				color: #7F7F7F;
+				font-size: 18px;
+				text-align: justify;
+				font-family: $rale;
+				font-weight: 400;
+			}
+		}//copy block
+		.image-grid{
+			position: relative;
+			width: 800px;
+			right: 00px;
+			top: -0px; 
+			margin-right: -170px;
+			margin-top: -85px; 
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: baseline;
+			align-content: stretch;
+			@include tablet(){
+				margin-top: 20px;
+				width: 100%;
+			}
+		}
+		.image-block{
+			position: relative; 
+			width: calc(98% / 2);
+			height: 210px;
+			top: 5px;
+			margin-bottom: 15px;
+			@include mobile(){
+				width: 100%;
+				height: 370px;
+			}
+			> div{
+				width: calc(100% - 20px);
+				height: calc(100% - 20px);
+				right: -15px;
+				top: 0px;
+				z-index: 100;
+				position: relative;
+				background: {
+					position: top center;
+					size: cover;
+					repeat: no-repeat;
+				}
+			}
+			&:before{
+				content: ' ';
+				position: absolute;
+				width: calc(100% - 20px);
+				height: calc(100% - 20px);
+				bottom: 0px;
+				left: 0px;
+				background: $teal;
+				z-index: 50;
+			}
+		}
+
+	}
+
+}
+
+
+.contactlist{
+	&-proper{
+		position: relative;
+		padding-left: 120px;
+		margin-bottom: 100px;
+		&:before{
+			content: '';
+			box-shadow: 0px 8px 23px rgba(0,0,0,0.57);
+			position: absolute;
+			top: -10px;
+			left: 40px;
+			height: 48px;
+			width: 48px; 
+			background: {
+				image: url('../img/arrows1.jpg');
+				size: cover;
+			}
+		}
+		> .title{
+			line-height: 24px;
+			color: #3D3D3D;
+			font-size: 24px;
+			text-transform: uppercase;
+			text-align: left;
+			font-family: $rale;
+			font-weight: 900;
+			margin-bottom: 20px;
+		}
+		.contact-block{
+			position: relative;
+			margin-bottom: 20px;
+			> .title{
+				font-size: 20px;
+				color: $orange;
+				font-family: $rale;
+				font-weight: 800;
+				line-height: 22px;
+			}
+			> .info-block{
+				color: #3D3D3D;
+				font-family: $rale;
+				font-weight: 500;
+				line-height: 19px;
+			}
+		}
+	}// contactlist-proper
+
+
+}

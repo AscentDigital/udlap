@@ -13,10 +13,12 @@
 	&-left:before{
 		top: 20px;
 		left: 20px;
+		right: unset !important; 
 	}
 	&-right:before{
 		top: 20px;
 		right: 20px;
+		left: unset !important;
 	}
 	&-lg:before{
 		height: 50px;
@@ -97,4 +99,5 @@ a{
 	background-image: url('../img/arrows1.jpg');
 	background-repeat: no-repeat;
 	background-size: contain;
+	z-index: 4000;
 }
