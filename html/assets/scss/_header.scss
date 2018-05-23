@@ -19,7 +19,7 @@
 			flex-wrap: wrap;
 			justify-content: center;
 			align-items: center; 
-		}
+		} 
 	}
 	&.inner:before{ 
 		height: 287px;
@@ -41,7 +41,45 @@
 	}
 }
 
-
+.banner-headline{		
+	&:after{
+		display: none;
+	}
+	@include tablet(){
+		margin-top: 65px;
+	}
+	> div{
+		position: relative;
+		z-index: 3000;
+		@include mobile(){
+			    width: 100%;
+		}
+		> img{
+			height: 77px;
+		    width: 77px;
+		    position: relative;
+		    top: -15px;
+		    display: inline-block; 
+		    @include mobile(){
+		    	    margin-left: 10px;
+		    }
+		}
+		> div.title{
+			display: inline-block;
+			text-shadow: 2px 2px 19px rgba(0,0,0,0.35);
+		    line-height: 28px;
+		    color: #FFFFFF;
+		    font-size: 28px;
+		    text-transform: uppercase;
+		    text-align: left;
+		    font-family: $rale;
+		    font-weight: 900;
+		    top: -8px;
+    		left: 15px;
+		    position: relative;
+		}
+	}
+}
 .mobile-nav-trigger{
 	display: none;
 	@include mobile(){
