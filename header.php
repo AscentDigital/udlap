@@ -49,24 +49,21 @@
       <div data-toggle="collapse" data-target="#menu2"> 
         <a href="javascript:void(0);">Programs</a>
         <div id="menu2" class="collapse">
-          <a href="./index.html">Menu 1</a>
-          <a href="./index.html">Menu 2</a>  
-          <a href="./index.html">Menu 3</a>  
-          <a href="./index.html">Menu 4</a>  
-          <a href="./index.html">Menu 5</a>  
-          <a href="./index.html">Menu 6</a>  
+          <a href="#">Bachelor Degrees</a>
+          <a href="#">Transfer Students</a>  
+          <a href="#">Summer Immersion</a>  
         </div> 
       </div>
-      <div> <a href="javascript:void(0);">student life</a> </div>
-      <div data-toggle="collapse" data-target="#menu3"> <a href="javascript:void(0);">Financial Aid</a> 
+      <div data-toggle="collapse" data-target="#menu3"> <a href="javascript:void(0);">Student life</a> 
         <div id="menu3" class="collapse">
-          <a href="./index.html">Menu 1</a>
-          <a href="./index.html">Menu 2</a>  
-          <a href="./index.html">Menu 3</a>  
-          <a href="./index.html">Menu 4</a>  
-          <a href="./index.html">Menu 5</a>  
-          <a href="./index.html">Menu 6</a>  
-        </div> </div> 
+          <a href="#">Facilities</a>
+          <a href="#">Activities</a>
+          <a href="#">Living Costs</a>
+          <a href="#">Safety in Puebla</a>
+          <a href="#">Campus Map</a>
+        </div> 
+      </div> 
+        <div> <a href="javascript:void(0);"></a>Financial Aid</div>
         <div> <a href="javascript:void(0);">Contact</a> </div>
       </div>
     </div>
@@ -90,21 +87,29 @@
               <a href="javascript:void(0);">ABOUT</a>
               <div class="submenu">
                 <a href="#">Our institution</a>
-                <a href="#">accredidations</a>
-                <a href="#">campus tour</a>
-                <a href="#">videos</a>
-                <a href="#">gallery</a>
+                <a href="#">Accreditations</a>
+                <a href="#">Campus tour</a>
+                <a href="#">Videos</a>
+                <a href="#">Gallery</a>
                 <a href="#">Brochures</a>
               </div>  
             </div>
             <div class="has-sub"> <a href="javascript:void(0);">Programs</a>
               <div class="submenu">
-                <a href="#">Menu 1</a>
-                <a href="#">Menu 2</a>  
+                <a href="#">Bachelor Degrees</a>
+                <a href="#">Transfer Students</a>  
+                <a href="#">Summer Immersion</a>  
               </div> 
             </div>
-            <div> <a href="javascript:void(0);">student life</a> </div>
-            <div> <a href="javascript:void(0);">Financial Aid</a> </div>
+            <div class="has-sub"> <a href="javascript:void(0);">Student Life</a>
+              <div class="submenu">
+                <a href="#">Facilities</a>
+                <a href="#">Activities</a>
+                <a href="#">Living Costs</a>
+                <a href="#">Safety in Puebla</a>
+                <a href="#">Campus Map</a>
+              </div> 
+            </div>
             <div> <a href="javascript:void(0);">Financial Aid</a> </div>
             <div> <a href="javascript:void(0);">Contact</a> </div>
           </div>
