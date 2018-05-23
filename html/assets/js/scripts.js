@@ -1,6 +1,6 @@
- $('.has-sub').on('click', function(){
+ $('.has-sub').on('click mouseover', function(){
 	$('.submenu', this).css('display', 'block');  
-	$(this).addClass('opened');  
+	$(this).addClass('opened');   
 });
  
 $(document).mouseup(function(e) {
