@@ -19,22 +19,22 @@
         <div class="row">
           <div class="col-md-6">
             <div class="image-box">
-              <img src="./assets/img/galleries1.jpg">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/galleries1.jpg">
             </div>
           </div>
           <div class="col-md-6">
             <div class="image-box">
-              <img src="./assets/img/galleries1.jpg">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/galleries1.jpg">
             </div>
           </div>
           <div class="col-md-6">
             <div class="image-box">
-              <img src="./assets/img/galleries1.jpg">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/galleries1.jpg">
             </div>
           </div>
           <div class="col-md-6">
             <div class="image-box">
-              <img src="./assets/img/galleries1.jpg">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/galleries1.jpg">
             </div>
           </div>
         </div>

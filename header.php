@@ -69,7 +69,7 @@
     </div>
 
     <!-- Header -->
-    <header class="banner wide home">
+    <header class=" <?php if(is_frontpage()){ echo 'banner wide home'; }else { echo 'banner default inner'; } ?>">
       <nav class="container">
         <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logotop.png" alt="UDLAP Logo"></div>
         <div class="nav-proper">
@@ -115,6 +115,9 @@
           </div>
         </div>
       </nav>
+      <?php 
+      if(is_frontpage()){
+       ?>
       <div class="headline container">
         <div class="text-center">
           <span class="main-title">WELCOME TO</span> <br>
@@ -123,4 +126,11 @@
           </span>
         </div>
       </div>
+      <?php }else{ ?>
+      <div class="headline">
+            <div class ="container head-arrow">
+               <p><?php the_title(); ?></p> 
+            </div>
+        </div>
+      <?php } ?>
     </header>
