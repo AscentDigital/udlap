@@ -15,28 +15,28 @@
 }
 .banner.default .headline:before{
 	content: '';
-	height:50px;
+	height:59px;
 	position: absolute;
 	width: 100%;
 	background-color: #FF6500;
 	z-index: 999;
 	opacity: 0.73;
 }
-.banner.default .headline:after{
+.banner.default .headline .head-arrow:after{
 	content: '';
 	position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 77px;
+    height: 77px;
     box-shadow: 8px 0px 23px rgba(0, 0, 0, 0.57);
     content: '';
     background-image: url("../img/arrows1.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 	z-index: 1000;
-	margin-left: 70px;
-	margin-top:-5px;
+	margin-top:-63px;
 }
-.banner.default p{
+.banner.default .headline p{
+	position: relative;
 	text-shadow: 2px 2px 19px rgba(0,0,0,0.35);
     line-height: 28px;
     color: #FFFFFF;
@@ -44,29 +44,159 @@
     text-align: left;
     font-family: raleway, sans-serif;
     font-weight: 900;
-    z-index: 1001;
-    margin-top: 10px;
-    margin-left: 150px;	
+    z-index: 1003;
+    margin-top: 15px;
+    margin-left: 110px;	
+    text-transform: uppercase;
 }
 @media (max-width: 768px) {
+	.headline .container{
+		margin-left: 0;
+		margin-right: 0;
+	}
 	.banner.default .headline{
 		margin-top: 40px;
 	}
-	.banner.default .headline:after{
+	.banner.default .headline .head-arrow:after{
 		margin-left: 0px;
 	}
 
-	.banner.default p{
-		margin-left: 75px;
+	.banner.default .headline p{
 		font-size: 20px;
 	}
 }
 .institution-section{
+	position: relative;
 	margin-bottom: 150px;
 }
 .accreditation-section{
+	position: relative;
 	margin-bottom: 150px;
 }
+.videos-section{
+	position: relative;
+	margin-bottom: 150px;
+}
+.videos-section:before{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+    content: '';
+    background-image: url(../img/puntitos.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    top:20px;
+}
+.videos-section .video-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.videos-section .video-box {
+	min-height: 300px;
+    background: #FFF;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+    margin-top: 80px;
+}
+.videos-section .video-thumbnail{
+	position: relative;
+	min-height: 300px;
+    padding: 40px 45px 0px 40px;
+    border-bottom: 40px solid #2E8683;
+}
+
+.videos-section .video-thumbnail .video{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.videos-section .video-thumbnail .video-link:before{
+	content: '';
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/mas.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 20px;
+	left: 20px;
+	z-index: 1001;
+}
+.videos-section .video-thumbnail .video-link:after{
+	content: '';
+	position: absolute;
+	width: 140px;
+	height: 140px;
+	left: 130px;
+	top:60px;
+	background-image: url(../img/play.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.videos-section .text-box{
+	padding: 15px 80px 15px 80px;
+}
+
+.videos-section .text-box .video-title{
+	line-height: 24px;
+    font-size: 24px;
+    text-align: center;
+    font-family: raleway, sans-serif;
+    font-weight: 800;
+}
+
+.videos-section .text-box .video-date{
+	line-height: 27px;
+    color: #7F7F7F;
+    font-size: 18px;
+    text-align: center;
+    font-family: raleway, sans-serif;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.videos-section .text-box .video-title:before{
+	content: '';
+	position: absolute;
+	border: 1px solid #D4D3D3;
+	width:40px;    
+	margin-top: 60px;
+	margin-left: 45px;	
+}
+.videos-section .text-box a{
+    color: #000 !important;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.videos-section .video-thumbnail .video-link:after{
+		width: 200px;
+		height: 200px;
+		left: 260px;
+		top:120px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.videos-section .video-thumbnail .video-link:after{
+		width: 100px;
+		height: 100px;
+	left: 130px;
+	top:60px;
+	}
+	.videos-section .text-box .video-title:before{
+		margin-top: 40px;
+		margin-left: 75px;
+	}
+	.videos-section .text-box{
+		padding: 10px 10px 10px 10px;
+	}
+}
+
 .basic-block{
 	margin-top: 80px;
     position: relative;
