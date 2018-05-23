@@ -8,7 +8,7 @@
       <?php echo $why_udlap['title']; ?>
     </div>
     <div class="copy">
-      Lorem ipsum dolor sit amet, eam cu partiendo expetendis. Ei tacimates aliquando eam, sea vitae exerci adversarium an. Ne option adolescens eam, dolores verterem delicata ut ius. Pri et veri commune, in aeque ridens dissentiunt vel. In liber intellegebat mei. Populo doming fuisset an nam, has ex choro libris. An duo augue corpora sadipscing, iriure viderer delicata eu vix. Ei quo novum fastidii, adhuc etiam adipiscing ex mea.
+      <?php echo $why_udlap['description']; ?>
     </div>
     <a href="#" class="sticky-btn sticky-about">
       Learn More
