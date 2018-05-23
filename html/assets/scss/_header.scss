@@ -50,7 +50,7 @@
 	}
 	> div{
 		position: relative;
-		z-index: 3000;
+		z-index: 1000;
 		@include mobile(){
 			    width: 100%;
 		}

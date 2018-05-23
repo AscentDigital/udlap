@@ -129,6 +129,7 @@ nav .nav-proper .nav-block .has-sub .submenu {
   font-family: "Raleway", sans-serif;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
+  z-index: 6000;
 }
 nav .nav-proper .nav-block .has-sub .submenu a {
   color: #000;
@@ -373,7 +374,7 @@ a:hover {
 }
 .banner-headline > div {
   position: relative;
-  z-index: 3000;
+  z-index: 1000;
 }
 @media (max-width: 768px) {
   .banner-headline > div {
