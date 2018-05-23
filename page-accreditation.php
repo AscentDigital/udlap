@@ -40,7 +40,7 @@
           <br><br>
           Id modus fabulas percipit pro. Usu an sale congue lucilius, cu semper philosophia nec. Eam facilis electram corrumpit ex. Duo tamquam fastidii te, eam ex noster elaboraret. Te autem alienum omittantur pri. No nam nominavi dignissim instructior.
         </p>
-        <img src="./assets/img/dlogo.png">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dlogo.png">
       </div>
       <div class="accreditators">
         <h1>NATIONAL COUNCIL OF EDUCATION AND PROFESSIONAL PRACTICE FOR CHEMICAL SCIENCES C.A.</h1>
@@ -54,7 +54,7 @@
           <br><br>
           Id modus fabulas percipit pro. Usu an sale congue lucilius, cu semper philosophia nec. Eam facilis electram corrumpit ex. Duo tamquam fastidii te, eam ex noster elaboraret. Te autem alienum omittantur pri. No nam nominavi dignissim instructior.
         </p>
-        <img src="./assets/img/dlogo.png">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dlogo.png">
       </div>
     </section>
     

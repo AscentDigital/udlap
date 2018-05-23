@@ -7,7 +7,7 @@
       <section class="gray-block explore-proper">
         <div class="container explore-block">
           <div>
-            <img src="./assets/img/tresfotos01.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tresfotos01.jpg" alt="">
             <div class="title">
               INTERNATIONAL <br>PROGRAMS
             </div> 
@@ -17,7 +17,7 @@
             <a href="#">More</a>
           </div>
           <div>
-            <img src="./assets/img/tresfotos02.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tresfotos02.jpg" alt="">
             <div class="title">
              TAKE A LOOK TO <br>OUR CAMPUS
            </div> 
@@ -27,7 +27,7 @@
           <a href="#">More</a>
         </div>
         <div>
-          <img src="./assets/img/tresfotos03.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tresfotos03.jpg" alt="">
           <div class="title">
             FINANCIAL<br>AID
           </div> 
@@ -48,7 +48,7 @@
         <div class="sneakpeek-block grid grid-md grid-left"> 
           <div class="copy-block">
             <div class="pre-headline">
-              <img src="./assets/img/mas.jpg" alt=""> Video Tour
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mas.jpg" alt=""> Video Tour
             </div>
             <div class="headline">
               A QUICK <br>SNEAK PEEK
@@ -56,7 +56,7 @@
             <div class="copy">
               Lorem ipsum dolor sit amet, eam cu partiendo expetendis. Ei tacimates aliquando eam, sea vitae exerci adversarium an. Ne option adolescens eam, dolores verterem delicata ut ius.
             </div>
-            <a href="./videos.html">More Videos</a>
+            <a href="<?php echo get_template_directory_uri(); ?>/videos.html">More Videos</a>
           </div> 
         </div>
         <div class="video-block">
@@ -75,10 +75,10 @@
         <div class="downloads-block grid grid-md grid-right">
           <div class="brochure-proper">
             <a href="#" class="brochure-block">
-              <img src="./assets/img/brochure.jpg" alt="brochure">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/brochure.jpg" alt="brochure">
             </a> 
           </div>
-          <a href="./brochures.html">More Brochures</a>
+          <a href="<?php echo get_template_directory_uri(); ?>/brochures.html">More Brochures</a>
         </div>
       </div>
 
@@ -97,7 +97,7 @@
           <div class="gallery-block"> 
             <div class="copy-proper grid grid-md grid-right"> 
               <div class="copy-block">
-                <a href="./galleries.html">
+                <a href="<?php echo get_template_directory_uri(); ?>/galleries.html">
                   <div class="headliner">
                     Picture <br>Galleries
                   </div>
@@ -108,8 +108,8 @@
               </div>
             </div> 
             <div class="images-block" data-items="2">
-              <img src="./assets/img/picgall1.jpg" alt="">
-              <img src="./assets/img/picgall2.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/picgall1.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/picgall2.jpg" alt="">
             </div> 
           </div> 
           <div class="gallery-deco"></div>  

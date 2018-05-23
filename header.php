@@ -38,10 +38,10 @@
       <div  data-toggle="collapse" data-target="#about"> 
         <a href="javascript:void(0);">ABOUT</a>
         <div id="about" class="collapse">
-          <a href="./our-institution.html">Our institution</a>
-          <a href="./acreditations.html">accredidations</a>
-          <a href="./campus-map.html">campus tour</a>
-          <a href="./videos.html">videos</a>
+          <a href="http://udlap.seventy4media.com/our-institution/">Our institution</a>
+          <a href="http://udlap.seventy4media.com/accreditation/">Accreditations</a>
+          <a href="#">Campus tour</a>
+          <a href="http://udlap.seventy4media.com/videos/">Videos</a>
           <a href="./gallery.html">gallery</a>
           <a href="./brochures.html">Brochures</a>
         </div>  
@@ -86,10 +86,10 @@
             <div class="has-sub"> 
               <a href="javascript:void(0);">ABOUT</a>
               <div class="submenu">
-                <a href="#">Our institution</a>
-                <a href="#">Accreditations</a>
+                <a href="http://udlap.seventy4media.com/our-institution/">Our institution</a>
+                <a href="http://udlap.seventy4media.com/accreditation/">Accreditations</a>
                 <a href="#">Campus tour</a>
-                <a href="#">Videos</a>
+                <a href="http://udlap.seventy4media.com/videos/">Videos</a>
                 <a href="#">Gallery</a>
                 <a href="#">Brochures</a>
               </div>  
