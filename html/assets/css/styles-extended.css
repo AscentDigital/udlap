@@ -151,6 +151,31 @@
 	margin-top: 40px;
 	margin-left: 10px;	
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+
+	.institution-section .basic-block:before{
+		display: block;
+		left: -25px;
+	}
+	.institution-section .basic-block .text-box{
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.institution-section .basic-block:before{
+		display: block;
+		left: -15px;
+	}
+	.institution-section .basic-block .text-box{
+		width: 100%;
+		padding: 30px 10px 30px 10px;
+	}
+	.institution-section .basic-block .text-box:before{
+		right: 10px;
+	}
+}
 .image-block{
 	position: absolute;
 	right: 0px;
@@ -162,6 +187,11 @@
   	height:192px;
   	width:272px;
   	margin-top: 45px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.image-block .image-box{
+		display: inline-block;
+	}
 }
 .image-block .image-box img{
 	margin-top: -20px;
@@ -956,6 +986,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
+	.facilities-section .basic-block:before{
+		display: block;
+	}
 	.facilities-section .basic-block .text-box{
 		width: 100%;
 	}
@@ -966,11 +1000,16 @@
 
 }
 @media (max-width: 767px) {
+	.facilities-section .basic-block:before{
+		display: block;
+		left: -15px;
+	}	
 	.facilities-section .basic-block .black-text:before{
 		margin-top: 105px;
 	}
 	.facilities-section .basic-block .text-box{
 		width: 100%;
+		padding: 30px 10px;
 	}
 	.facilities-list{
 		width: 100%;
@@ -1109,6 +1148,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
 	.map-content .fullscreen{
 		left:150px;
 	}
