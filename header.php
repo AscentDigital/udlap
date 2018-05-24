@@ -33,10 +33,9 @@
     </div>
     <div class="nav-block"> 
       <?php  
-        $args = array(
-          'theme_location' => 'primary'
-        );
-        $items = wp_get_nav_menu_items($args);
+        $menuLocations = get_nav_menu_locations();
+        $menuID = $menuLocations['primary'];
+        $items = wp_get_nav_menu_items($menuID);
         var_dump($items);
       ?>
       <div class="active"> 
