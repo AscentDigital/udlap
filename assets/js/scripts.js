@@ -1,4 +1,3 @@
-<<<<<<< HEAD:assets/js/scripts.js
 (function($) {
     $('.has-sub').on('click', function(){
     	$('.submenu', this).css('display', 'block');  
@@ -7,15 +6,6 @@
      
     $(document).mouseup(function(e) {
     	var container = $(".submenu");
-=======
- $('.has-sub').on('click mouseover', function(){
-	$('.submenu', this).css('display', 'block');  
-	$(this).addClass('opened');   
-});
- 
-$(document).mouseup(function(e) {
-	var container = $(".submenu");
->>>>>>> static:html/assets/js/scripts.js
 
         // if the target of the click isn't the container nor a descendant of the container
         if (!container.is(e.target) && container.has(e.target).length === 0) 

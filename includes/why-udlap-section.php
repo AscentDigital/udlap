@@ -11,7 +11,7 @@
       <?php echo $why_udlap['description']; ?>
     </div>
     <a href="#" class="sticky-btn sticky-about">
-      Learn More
+      <?php _e('Learn More'); ?>
     </a>
   </div> 
 </section>
