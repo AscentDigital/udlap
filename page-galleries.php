@@ -26,8 +26,8 @@
                   <img src="<?php echo $image['url']; ?>" class ="gallery">
                   </a>
                   <div class="text-box">
-                    <p class ="gallery-title"><a href="">Title of the gallery</a></p>
-                    <p class ="gallery-date">April 2018</p>
+                    <p class ="gallery-title"><a href=""><?php the_title(); ?></a></p>
+                    <p class ="gallery-date"><?php echo strtotime("M j, Y", get_field('date')); ?></p>
                   </div>
                 </div>
               </div>
