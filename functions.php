@@ -70,7 +70,7 @@
 	add_action( 'init', 'gallery_cpt' );
 
 	function videos_cpt() {
-		register_post_type( 'gallery', array(
+		register_post_type( 'videos', array(
 		  'labels' => array(
 		    'name' => 'Videos',
 		    'singular_name' => 'Video',
