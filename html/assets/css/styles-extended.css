@@ -988,11 +988,16 @@
 /* Campus Map */
 .campus-section{
 	position: relative;
-	margin-bottom: 50px;
+	margin-bottom: 200px;
 }
 .campus-section .basic-block{
 	margin-left: auto;
 	margin-right: auto;
+	width: 100%;
+}
+.campus-section .campus-pad{
+	padding-left: 80px;
+	padding-right: 80px;
 }
 .campus-section .basic-block:before{
 	content: '';
@@ -1004,7 +1009,7 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	top: -25px;
-	left: 50%;
+	left:calc(50% - 26px);
 }
 .campus-section .basic-block .text-box:before{
 	position: absolute;
@@ -1016,11 +1021,11 @@
     background-repeat: no-repeat;
     background-position: center;
     bottom:20px;
-	left: 50.55%;
+	left: calc(50% - 14px);
 }
 .campus-section .basic-block .text-box{
 	  position: relative;
-	  padding: 55px 130px 50px 200px;
+	  padding: 55px 150px 50px 150px;
 }
 .campus-section .basic-block .black-text{
 	color: #3D3D3D;
@@ -1038,7 +1043,7 @@
 	border: 3px solid #2E8683;
 	width:70px;    
 	margin-top: 60px;
-	margin-left: 140px;
+	margin-left: 110px;
 }
 .campus-section .basic-block .details-text{
 	line-height: 30px;
@@ -1049,6 +1054,122 @@
     font-weight: 400;
     padding-top: 30px;
 	margin-bottom: 20px;
+}
+.map-block{
+	position: relative;
+	margin-top: 100px;
+	width: 100%;
+	min-height: 900px;
+    border: 3px solid #D4D3D3;
+    margin-bottom: 80px;
+}
+.map-pad{
+	padding-left: 150px;
+	padding-right: 150px;
+}
+.map-content{
+	text-align: center;
+}
+.map-content a{    
+	line-height: 20px;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: raleway, sans-serif;
+    font-weight: 800;
+	background-color: #F47B22;
+	text-align: center;
+	padding: 15px 50px;
+}
+.map-content .fullscreen{
+	position: absolute;
+	top:-27px;
+	left: 255px;
+}
+.map-content .download{
+	position: absolute;
+	bottom:-27px;
+	left: 255px;
+}
+.map-image{
+	position: relative;
+	width: 100%;
+	height: 756px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: #2E8683;
+	margin-top: -900px;
+}
+.map-image img{
+	position: relative;
+	margin-top: -15px;
+	width: 100%;
+	height: 756px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.map-content .fullscreen{
+		left:150px;
+	}
+	.map-content .download{
+		left:155px;
+	}
+}
+@media (max-width: 767px) {
+	.campus-section{
+		margin-bottom: 300px;
+	}
+	.map-block{
+		min-height: 310px;
+	}
+	.map-content a{
+		font-size: 14px;
+		padding:10px 20px;    
+	}
+	.map-content .fullscreen{
+		left:50px;
+	}
+	.map-content .download{
+		left:55px;
+	}
+	.map-image{
+		height: 230px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-top: -340px;
+	}
+	.map-image img{
+		height: auto;
+	}
+}
+@media (max-width: 768px) {
+
+	.campus-section .campus-pad{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.map-pad{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.campus-section .content-text{
+		padding: 20px 10px 20px 10px;
+	}
+	.campus-section .basic-block .text-box{
+	  	padding: 10px 10px 30px 10px;
+	}
+
+	.campus-section .basic-block .black-text{
+		font-size: 30px;
+	}
+
+	.campus-section .basic-block .text-box:before{
+		left: calc(50% - 10px);
+	}
+	.campus-section .basic-block .black-text:before{
+		margin-left: 64px;
+	}
 }
 /* Bachelor */
 .bachelor-proper .bs-block{
