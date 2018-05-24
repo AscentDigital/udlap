@@ -18,10 +18,10 @@
         <?php the_content(); ?>
       </div>
       <?php  
-                if( have_rows('general_description') ):
+                if( have_rows('education') ):
 
                    // loop through the rows of data
-                  while ( have_rows('general_description') ) : the_row();
+                  while ( have_rows('education') ) : the_row();
                 $img = get_sub_field('image');
       ?>
               <div class="accreditators">
