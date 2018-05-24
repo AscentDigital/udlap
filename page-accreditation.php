@@ -27,9 +27,7 @@
               <div class="accreditators">
                 <h1><?php echo get_sub_field('heading'); ?></h1>
                 <h2><?php echo get_sub_field('sub_heading'); ?></h2>
-                <p>
-                  <?php echo get_sub_field('content'); ?>
-                </p>
+                <?php echo get_sub_field('content'); ?>
                 <img src="<?php echo $img['url']; ?>">
               </div>
       <?php 
