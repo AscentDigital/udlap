@@ -1,0 +1,54 @@
+.social{
+
+
+	&-proper{
+		position: relative;
+	}
+
+	&-block{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 60px;
+		> div{
+			min-height: 445px;
+			width: calc(90% / 3);
+			background: #FFF;
+		    box-shadow: 0px 0px 35px rgba(0,0,0,0.3);
+		    margin-bottom: 30px;
+		    @include mobile(){
+				width: 100%;
+			}
+		}
+		.title{
+			height: 50px;
+			background: $orange;
+			width: 100%;
+			color: #FFFFFF;
+		    font-size: 21px;
+		    text-align: center;
+		    line-height: 21px;
+		    font-family: $rale;
+		    text-transform: uppercase;
+		    font-weight: 800;
+		    padding: 15px;
+		}
+		.social-content{
+			position: relative;
+			padding: 40px;
+			border-bottom: 20px solid $teal;
+			@include tablet(){
+				padding: 40px 0px;
+			}
+		}
+		.social-api{
+			background: #DDDCDC; 
+			height: 300px;
+			width: 100%;
+			overflow-y: auto;
+			overflow-x: hidden;
+		}
+	}
+
+
+}

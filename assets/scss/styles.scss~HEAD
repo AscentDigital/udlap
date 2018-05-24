@@ -1,0 +1,122 @@
+/* 
+	Theme: UDLAP International
+	Author: DB
+	Date Created: May 13, 2018
+*/
+
+@import 'reset';
+
+@import 'variables'; 
+@import 'mixins'; 
+
+body, body > *, body > * > *{
+	transition: 0.3s ease-out;
+}
+
+/* Navigation Component */
+@import 'nav'; 
+
+/* Typography Components */
+.main-title{
+	font-size: 60px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 60px;
+	font-family: $rale;
+	font-weight: 600;
+	text-shadow: 0px 0px 30px #000000;
+	&.strong{
+		font-weight: 900;
+	}
+	@include mobile(){
+		font-size: 35px;
+	}
+}
+
+/* Misc */
+@import 'misc';
+
+/* Header Component */
+@import 'header';
+
+
+/* White block */
+.white-block{
+	min-height: 690px;
+	position: relative;
+}
+
+@import 'about';
+@import 'inquiry';
+
+
+
+.discover{
+	&-proper{
+		padding-top: 200px;
+		position: relative;
+	}
+}
+
+@import 'sneakpeek';
+@import 'downloads'; 
+
+
+.contact{
+	&-proper{
+		position: relative;
+		padding-top: 50px;
+		padding-bottom: 160px;
+		z-index: 1000;
+	}
+	&-block{
+		.headliner{
+			display: block;
+			color: #3D3D3D;
+			font-size: 50px;
+			text-align: center;
+			line-height: 50px;
+			font-family: $rale;
+			font-weight: 900;
+		}
+	}
+}
+
+@import 'social';
+@import 'inquiry';
+
+
+.brochure-proper{
+	position: absolute;
+	right: 135px;
+	top: 25px;
+	@include tablet(){
+		right: 80px;
+		top: 40px;
+	}
+	@include mobile(){
+		top: 285px;
+		width: 92%;
+		left: 10px;
+
+	}
+	@media (max-width: 410px){
+		img{ 
+			width: 100%;
+		}
+	}
+}
+
+/* Gray Block */
+.gray-block{
+	min-height: 500px;
+	background: transparent url(../img/bg-light.jpg?crc=117488147) no-repeat left top;
+	background-size: cover;
+	position: relative;
+}
+
+@import 'explore';
+@import 'gallery';
+
+@import 'footer';
