@@ -33,7 +33,10 @@
     </div>
     <div class="nav-block"> 
       <?php  
-        $items = wp_get_nav_menu_items('primary');
+        $args = array(
+          'theme_location' => 'primary'
+        );
+        $items = wp_get_nav_menu_items($args);
         var_dump($items);
       ?>
       <div class="active"> 
