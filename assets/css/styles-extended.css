@@ -398,7 +398,7 @@
 	background-position: center;
 }
 .videos-section .text-box{
-	padding: 15px 80px 15px 80px;
+	padding: 15px 30px 15px 30px;
 }
 
 .videos-section .text-box .video-title{
@@ -417,14 +417,6 @@
     font-family: raleway, sans-serif;
     font-weight: 500;
     margin-top: 30px;
-}
-.videos-section .text-box .video-title:before{
-	content: '';
-	position: absolute;
-	border: 1px solid #D4D3D3;
-	width:40px;    
-	margin-top: 60px;
-	margin-left: 45px;	
 }
 .videos-section .text-box a{
     color: #000 !important;
@@ -1449,4 +1441,10 @@
 	.content-text{
 		padding: 10px 10px 10px 10px;
 	}
+}
+.video-hr{
+	margin-top: 23px;
+    margin-bottom: 0px;
+    width: 40px;
+    border: 1px solid #D4D3D3;
 }

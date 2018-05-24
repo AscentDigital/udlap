@@ -26,7 +26,9 @@
                   <img src="<?php echo $image['url']; ?>" class ="video">
                   </a>
                   <div class="text-box">
-                    <p class ="video-title"><a href=""><?php the_title(); ?></a></p>
+                    <p class ="video-title"><a href=""><?php the_title(); ?></a>
+                      <hr class="videos-hr">
+                    </p>
                     <p class ="video-date"><?php echo get_field('date'); ?></p>
                   </div>
                 </div>
