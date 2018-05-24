@@ -42,7 +42,19 @@
 
     <!-- Mas UDLAP -->
     <section class="white-block container discover-proper">  
-
+      <?php  
+            $args = array(
+                'post_type' => 'videos',
+                'posts_per_page' => 1,
+                'order' => 'DESC',
+                'orderby' => 'post_date'
+            );
+            $query = new WP_Query($args);
+            if($query->have_posts()){
+              while($query->have_posts()){
+                $query->the_post();
+                $image = get_field('thumbnail');
+            ?>
       <!-- discover block 1 - sneakpeek -->
       <div class="discover-block sneakpeek-proper">
         <div class="sneakpeek-block grid grid-md grid-left"> 
@@ -51,19 +63,23 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mas.jpg" alt=""> Video Tour
             </div>
             <div class="headline">
-              A QUICK <br>SNEAK PEEK
+              <?php the_title(); ?>
             </div>
             <div class="copy">
-              Lorem ipsum dolor sit amet, eam cu partiendo expetendis. Ei tacimates aliquando eam, sea vitae exerci adversarium an. Ne option adolescens eam, dolores verterem delicata ut ius.
+              <?php the_content(); ?>  
             </div>
-            <a href="<?php echo get_template_directory_uri(); ?>/videos.html">More Videos</a>
+            <a href="http://udlap.seventy4media.com/videos/">More Videos</a>
           </div> 
         </div>
         <div class="video-block">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3hjcHOvcjk4" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+          <iframe width="100%" height="100%" src="<?php echo get_field('youtube_link'); ?>" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-
+      <?php
+        }
+        }
+        wp_reset_query();
+      ?>
       <!-- discover block 2 - downloads -->
       <div class="discover-block downloads-proper">
         <div class="copy-block">
