@@ -17,26 +17,16 @@
       </div>  
       <div class="image-block">
         <div class="row">
+          <?php  
+            $images = get_field('images');
+            foreach ($images as $image) {
+          ?>
           <div class="col-md-6 col-sm-6 text-center">
             <div class="image-box">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/galleries1.jpg">
+              <img src="<?php echo $image['url']; ?>">
             </div>
           </div>
-          <div class="col-md-6 col-sm-6 text-center">
-            <div class="image-box">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/galleries1.jpg">
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6 text-center">
-            <div class="image-box">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/galleries1.jpg">
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6 text-center">
-            <div class="image-box">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/galleries1.jpg">
-            </div>
-          </div>
+          <?php } ?>
         </div>
       </div>
       <div class="content-text">
