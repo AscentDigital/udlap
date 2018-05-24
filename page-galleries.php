@@ -18,7 +18,6 @@
               while($query->have_posts()){
                 $query->the_post();
                 $image = get_field('thumbnail');
-                $date = date("F Y", strtotime(get_field('date')));
             ?>
             <div class ="col-md-4">
               <div class="gallery-box">
@@ -28,7 +27,7 @@
                   </a>
                   <div class="text-box">
                     <p class ="gallery-title"><a href=""><?php the_title(); ?></a></p>
-                    <p class ="gallery-date"><?php echo $date; ?></p>
+                    <p class ="gallery-date"><?php echo get_field('date'); ?></p>
                   </div>
                 </div>
               </div>
