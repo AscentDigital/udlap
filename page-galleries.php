@@ -27,7 +27,7 @@
                   </a>
                   <div class="text-box">
                     <p class ="gallery-title"><a href=""><?php the_title(); ?></a></p>
-                    <p class ="gallery-date"><?php echo strtotime("M j, Y", get_field('date')); ?></p>
+                    <p class ="gallery-date"><?php echo get_field('date'); ?></p>
                   </div>
                 </div>
               </div>
