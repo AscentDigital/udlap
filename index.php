@@ -132,37 +132,19 @@
           <div>
             <div class="title">facebook</div>
             <div class="social-content grid grid-sm grid-left">
-              <div class="social-api" id="facebook">
-                <?php if ( is_active_sidebar( 'facebook_feed' ) ) : ?>
-                  <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-                    <?php dynamic_sidebar( 'facebook_feed' ); ?>
-                  </div><!-- #primary-sidebar -->
-               <?php endif; ?>
-              </div>
+              <div class="social-api" id="facebook"></div>
             </div>
           </div>
           <div>
             <div class="title">instagram</div>
             <div class="social-content grid grid-sm grid-left">
-              <div class="social-api" id="instagram">
-                <?php if ( is_active_sidebar( 'instagram_feed' ) ) : ?>
-                  <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary" style="max-height:350px;overflow:auto;">
-                    <?php dynamic_sidebar( 'instagram_feed' ); ?>
-                  </div><!-- #primary-sidebar -->
-                <?php endif; ?>
-              </div>
+              <div class="social-api" id="instagram"></div>
             </div>
           </div>
           <div>
             <div class="title">twitter</div>
             <div class="social-content grid grid-sm grid-left">
-              <div class="social-api" id="twitter">
-                <?php if ( is_active_sidebar( 'twitter_feed' ) ) : ?>
-                <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary" style="height:100%">
-                  <?php dynamic_sidebar( 'twitter_feed' ); ?>
-                </div><!-- #primary-sidebar -->
-                <?php endif; ?>
-              </div>
+              <div class="social-api" id="twitter"></div>
             </div>
           </div>
 

@@ -23,34 +23,4 @@
 		add_theme_support('post-formats', array('aside', 'gallery', 'link'));
 	}
 	add_action('after_setup_theme', 'setup');
-	add_action( 'init', 'register_my_menus' );
-	
-	if ( function_exists('register_sidebar') ) {
-	   register_sidebar(array(
-	   'name' => 'Facbook Feed',
-	   'id'            => 'facebook_feed',
-	   'before_widget' => '<div id="%1$s" class="widget %2$s">',
-	   'after_widget' => '</div>',
-	   'before_title' => '<h2>',
-	   'after_title' => '</h2>'
-	    ));
-	   register_sidebar(array(
-	   'name' => 'Twitter Feed',
-	   'id'            => 'twitter_feed',
-	   'before_widget' => '<div id="%1$s" class="widget %2$s">',
-	   'after_widget' => '</div>',
-	   'before_title' => '<h2>',
-	   'after_title' => '</h2>'
-	   ));   
-	   
-	   register_sidebar(array(
-	   'name' => 'Instagram Feed',
-	   'id'            => 'instagram_feed',
-	   'before_widget' => '<div id="%1$s" class="widget %2$s">',
-	   'after_widget' => '</div>',
-	   'before_title' => '<h2>',
-	   'after_title' => '</h2>'
-	   ));
-	   
-	}
 ?>
