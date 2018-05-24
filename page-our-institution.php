@@ -17,22 +17,22 @@
       </div>  
       <div class="image-block">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-6 text-center">
             <div class="image-box">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/galleries1.jpg">
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-6 text-center">
             <div class="image-box">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/galleries1.jpg">
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-6 text-center">
             <div class="image-box">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/galleries1.jpg">
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-6 text-center">
             <div class="image-box">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/galleries1.jpg">
             </div>
