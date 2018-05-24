@@ -468,7 +468,7 @@
 	height: auto;
 }
 
-.galleries-section .gallery-thumbnail .gallery-link:before{
+.galleries-section .gallery-thumbnail .g-link:before{
 	content: '';
 	position: absolute;
 	width: 32px;

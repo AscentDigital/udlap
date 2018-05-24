@@ -22,7 +22,7 @@
             <div class ="col-md-4">
               <div class="gallery-box">
                 <div class="gallery-thumbnail">
-                  <a href="#">
+                  <a href="#" class ="g-link">
                   <img src="<?php echo $image['url']; ?>" class ="gallery">
                   </a>
                   <div class="text-box">
