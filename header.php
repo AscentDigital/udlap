@@ -36,9 +36,45 @@
         $menuLocations = get_nav_menu_locations();
         $menuID = $menuLocations['primary'];
         $items = wp_get_nav_menu_items($menuID);
-        var_dump($items);
+        $menus = array();
+        foreach ($items as $item) {
+          if($item->menu_item_parent == 0){
+            $menus['item-' . $item->ID]['parent'] = $item;
+          }else{
+            $menus['item-' . $item->menu_item_parent]['children'][] = $item;
+          }
+        }
+
+        foreach ($menus as $key => $value){
+          $active = '';
+          if($value['parent']->object_id == get_the_ID()){
+            $active = 'active';
+          }
+
+          $has_sub = '';
+          $children = '';
+          if(isset($value['children'])){
+            $has_sub = 'data-toggle="collapse" data-target="#menu-'.$value['parent']->object_id.'"';
+            $parent_link = 'javascript:void(0);';
+            $children = '<div id="menu-'.$value['parent']->object_id.'" class="collapse">';
+            foreach ($value['children'] as $child) {
+              if($child->object_id == get_the_ID()){
+                $active = 'active';
+              }
+              $children .= '<a href="'.$child->url.'">'.$child->title.'</a>';
+            }
+            $children .= '</div>';
+          }else{
+            $parent_link = $value['parent']->url;
+          }
+
+          $prefix = '<div class="'.$active.'" '.$has_sub.'>';
+          $parent = '<a href="'.$parent_link.'">'.strtoupper($value['parent']->title).'</a>';
+          $html = $prefix . $parent . $children . '</div>';
+          echo $html;
+        }
       ?>
-      <div class="active"> 
+      <!-- <div class="active"> 
         <a href="http://udlap.seventy4media.com/">HOME</a>  
       </div>
       <div  data-toggle="collapse" data-target="#about"> 
@@ -70,7 +106,7 @@
         </div> 
       </div> 
         <div> <a href="javascript:void(0);"></a>Financial Aid</div>
-        <div> <a href="javascript:void(0);">Contact</a> </div>
+        <div> <a href="javascript:void(0);">Contact</a> </div> -->
       </div>
     </div>
 
@@ -86,38 +122,36 @@
             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons4.png" alt=""></a>
           </div>
           <div class="nav-block"> 
-            <div class="active"> 
-              <a href="http://udlap.seventy4media.com/">HOME</a>  
-            </div>
-            <div class="has-sub"> 
-              <a href="javascript:void(0);">ABOUT</a>
-              <div class="submenu">
-                <a href="http://udlap.seventy4media.com/our-institution/">Our institution</a>
-                <a href="http://udlap.seventy4media.com/accreditation/">Accreditations</a>
-                <a href="#">Campus tour</a>
-                <a href="http://udlap.seventy4media.com/videos/">Videos</a>
-                <a href="#">Gallery</a>
-                <a href="#">Brochures</a>
-              </div>  
-            </div>
-            <div class="has-sub"> <a href="javascript:void(0);">Programs</a>
-              <div class="submenu">
-                <a href="#">Bachelor Degrees</a>
-                <a href="#">Transfer Students</a>  
-                <a href="#">Summer Immersion</a>  
-              </div> 
-            </div>
-            <div class="has-sub"> <a href="javascript:void(0);">Student Life</a>
-              <div class="submenu">
-                <a href="#">Facilities</a>
-                <a href="#">Activities</a>
-                <a href="#">Living Costs</a>
-                <a href="#">Safety in Puebla</a>
-                <a href="#">Campus Map</a>
-              </div> 
-            </div>
-            <div> <a href="javascript:void(0);">Financial Aid</a> </div>
-            <div> <a href="javascript:void(0);">Contact</a> </div>
+            <?php
+              foreach ($menus as $key => $value){
+                $active = '';
+                if($value['parent']->object_id == get_the_ID()){
+                  $active = 'active';
+                }
+
+                $has_sub = '';
+                $children = '';
+                if(isset($value['children'])){
+                  $has_sub = 'has-sub';
+                  $parent_link = 'javascript:void(0);';
+                  $children = '<div class="submenu">';
+                  foreach ($value['children'] as $child) {
+                    if($child->object_id == get_the_ID()){
+                      $active = 'active';
+                    }
+                    $children .= '<a href="'.$child->url.'">'.$child->title.'</a>';
+                  }
+                  $children .= '</div>';
+                }else{
+                  $parent_link = $value['parent']->url;
+                }
+
+                $prefix = '<div class="'.$has_sub.' '.$active.'">';
+                $parent = '<a href="'.$parent_link.'">'.strtoupper($value['parent']->title).'</a>';
+                $html = $prefix . $parent . $children . '</div>';
+                echo $html;
+              }
+            ?>
           </div>
         </div>
       </nav>
