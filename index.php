@@ -126,48 +126,30 @@
     <!-- Galleria -->
     <section class="gray-block gallery more-below"> 
       <div class="container">
-            <?php  
-            $args = array(
-                'post_type' => 'gallery',
-                'posts_per_page' => 1,
-                'order' => 'DESC',
-                'orderby' => 'post_date'
-            );
-            $query = new WP_Query($args);
-            if($query->have_posts()){
-              while($query->have_posts()){
-                $query->the_post();
-                $image = get_field('thumbnail');
-                $gallery = get_field('gallery');
-                $image2 = $gallery[0]['url'];
-            ?>
+
         <!-- discover block 3 - gallery proper -->
         <div class="discover-block gallery-proper">
           <div class="gallery-block"> 
             <div class="copy-proper grid grid-md grid-right"> 
               <div class="copy-block">
-                <a href="<?php the_permalink(); ?>">
+                <a href="<?php echo get_site_url(); ?>/galleries/">
                   <div class="headliner">
-                    <?php the_title(); ?>
+                    Picture <br>Galleries
                   </div>
                 </a>
                 <div class="copy">
-                  <?php the_content(); ?>
+                  Lorem ipsum dolor sit amet, eam cu partiendo expetendis. Ei tacimates aliquando eam. Lorem ipsum dolor sit amet.
                 </div>
               </div>
             </div> 
             <div class="images-block" data-items="2">
-              <img src="<?php echo $image['url']; ?>" alt="">
-              <img src="<?php echo $image2; ?>" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/picgall1.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/picgall2.jpg" alt="">
             </div> 
           </div> 
           <div class="gallery-deco"></div>  
         </div> 
-            <?php
-              }
-              }
-              wp_reset_query();
-            ?>
+        
 
       </div>
     </section>
