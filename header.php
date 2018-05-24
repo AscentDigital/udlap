@@ -32,6 +32,10 @@
       <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons4.png" alt=""></a>
     </div>
     <div class="nav-block"> 
+      <?php  
+        $items = wp_get_nav_menu_items('primary');
+        var_dump($items);
+      ?>
       <div class="active"> 
         <a href="http://udlap.seventy4media.com/">HOME</a>  
       </div>
