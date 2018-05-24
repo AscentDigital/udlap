@@ -7,7 +7,7 @@
               <div class="gallery-box">
                 <div class="gallery-thumbnail">
                   <a href="#" class ="gallery-link">
-                  <img src="./assets/img/galleries1.jpg" class ="gallery">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/galleries1.jpg" class ="gallery">
                   </a>
                   <div class="text-box">
                     <p class ="gallery-title"><a href="">Title of the gallery</a></p>
@@ -20,7 +20,7 @@
               <div class="gallery-box">
                 <div class="gallery-thumbnail">
                   <a href="#" class ="gallery-link">
-                  <img src="./assets/img/galleries2.jpg" class ="gallery">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/galleries2.jpg" class ="gallery">
                   </a>
                   <div class="text-box">
                     <p class ="gallery-title"><a href="">Title of the gallery</a></p>
@@ -33,7 +33,7 @@
               <div class="gallery-box">
                 <div class="gallery-thumbnail">
                   <a href="#" class ="gallery-link">
-                  <img src="./assets/img/galleries3.jpg" class ="gallery">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/galleries3.jpg" class ="gallery">
                   </a>
                   <div class="text-box">
                     <p class ="gallery-title"><a href="">Title of the gallery</a></p>
