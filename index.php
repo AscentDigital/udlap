@@ -68,7 +68,7 @@
             <div class="copy">
               <?php the_content(); ?>  
             </div>
-            <a href="http://udlap.seventy4media.com/videos/">More Videos</a>
+            <a href="<?php echo get_site_url(); ?>/videos/">More Videos</a>
           </div> 
         </div>
         <div class="video-block">
@@ -80,6 +80,21 @@
         }
         wp_reset_query();
       ?>
+
+      <?php  
+            $args = array(
+                'post_type' => 'brochures',
+                'posts_per_page' => 1,
+                'order' => 'DESC',
+                'orderby' => 'post_date'
+            );
+            $query = new WP_Query($args);
+            if($query->have_posts()){
+              while($query->have_posts()){
+                $query->the_post();
+                $image = get_field('image');
+                $file = get_field('file');
+      ?>
       <!-- discover block 2 - downloads -->
       <div class="discover-block downloads-proper">
         <div class="copy-block">
@@ -90,14 +105,18 @@
         </div>
         <div class="downloads-block grid grid-md grid-right">
           <div class="brochure-proper">
-            <a href="#" class="brochure-block">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/brochure.jpg" alt="brochure">
+            <a href="<?php echo $file['url']; ?>" class="brochure-block">
+              <img src="<?php echo $image['url']; ?>" alt="brochure">
             </a> 
           </div>
-          <a href="<?php echo get_template_directory_uri(); ?>/brochures.html">More Brochures</a>
+          <a href="<?php echo get_site_url(); ?>/brochures/">More Brochures</a>
         </div>
       </div>
-
+      <?php
+        }
+        }
+        wp_reset_query();
+      ?>
 
     </section><!-- Mas UDLAP -->
 
@@ -107,30 +126,48 @@
     <!-- Galleria -->
     <section class="gray-block gallery more-below"> 
       <div class="container">
-
+            <?php  
+            $args = array(
+                'post_type' => 'gallery',
+                'posts_per_page' => 1,
+                'order' => 'DESC',
+                'orderby' => 'post_date'
+            );
+            $query = new WP_Query($args);
+            if($query->have_posts()){
+              while($query->have_posts()){
+                $query->the_post();
+                $image = get_field('thumbnail');
+                $gallery = get_field('gallery');
+                $image2 = $gallery[0]['url'];
+            ?>
         <!-- discover block 3 - gallery proper -->
         <div class="discover-block gallery-proper">
           <div class="gallery-block"> 
             <div class="copy-proper grid grid-md grid-right"> 
               <div class="copy-block">
-                <a href="<?php echo get_template_directory_uri(); ?>/galleries.html">
+                <a href="<?php the_permalink(); ?>">
                   <div class="headliner">
-                    Picture <br>Galleries
+                    <?php the_title(); ?>
                   </div>
                 </a>
                 <div class="copy">
-                  Lorem ipsum dolor sit amet, eam cu partiendo expetendis. Ei tacimates aliquando eam. Lorem ipsum dolor sit amet.
+                  <?php the_content(); ?>
                 </div>
               </div>
             </div> 
             <div class="images-block" data-items="2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/picgall1.jpg" alt="">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/picgall2.jpg" alt="">
+              <img src="<?php echo $image['url']; ?>" alt="">
+              <img src="<?php echo $image2; ?>" alt="">
             </div> 
           </div> 
           <div class="gallery-deco"></div>  
         </div> 
-        
+            <?php
+              }
+              }
+              wp_reset_query();
+            ?>
 
       </div>
     </section>
