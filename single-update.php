@@ -1,6 +1,7 @@
 <?php  
   get_header();
   the_post();
+  $image = get_field('image');
 ?>
 <section class="white-block container post-section">
       <div class="basic-block">
@@ -20,7 +21,7 @@
         <div class="row">
           <div class="col-md-12 col-sm-12 text-center">
             <div class="image-box">
-              <img src="./assets/img/galleries1.jpg">
+              <img src="<?php echo $image['url']; ?>">
             </div>
           </div>
         </div>

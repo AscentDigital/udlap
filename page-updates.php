@@ -25,7 +25,7 @@
             <a href="<?php the_permalink(); ?>">
             <div class="row update-block"> 
                 <div class="col-md-4">
-                  <div class="picture-block" style="background-image: url('<?php echo $image1['url']; ?>">
+                  <div class="picture-block" style="background-image: url('<?php echo $image['url']; ?>">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mas.jpg" alt="">
                   </div>
                 </div>
