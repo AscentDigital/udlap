@@ -1413,7 +1413,7 @@ p {
 		height: 170px;
 	}
 	.post-section .image-block .image-box img{
-		height: auto;
+		height: 170px;
 	}
 	.post-section .image-block:before{
 		left: 0px;
