@@ -3,6 +3,10 @@
   the_post();
   $image1 = get_field('image1');
   $image2 = get_field('image2');
+  $image3 = get_field('image3');
+  $image4 = get_field('image4');
+  $image5 = get_field('image5');
+  $image6 = get_field('image6');
 ?>
    <section class="white-block container facilities-section">
       <div class="basic-block">
@@ -58,7 +62,7 @@
        if( have_rows('listing') ):
        while ( have_rows('listing') ) : the_row();
        ?>
-       <div class="list-block">
+       <div class="facilities-list">
           <div class ="list-title"><?php echo get_sub_field('listing_title'); ?></div>
           <ul>
             <?php  
