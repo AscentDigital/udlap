@@ -173,4 +173,22 @@
 
 	add_action( 'admin_post_nopriv_udlap_update_theme_options', 'update_theme_options' );
 	add_action( 'admin_post_udlap_update_theme_options', 'update_theme_options' );
+
+	function load_custom_fonts($init) {
+
+	    $stylesheet_url = 'https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900';  // Note #1
+
+	    if(empty($init['content_css'])) {  // Note #2
+	        $init['content_css'] = $stylesheet_url;
+	    } else {
+	        $init['content_css'] = $init['content_css'].','.$stylesheet_url;
+	    }
+
+	    $font_formats = isset($init['font_formats']) ? $init['font_formats'] : 'Andale Mono=andale mono,times;Arial=arial,helvetica,sans-serif;Arial Black=arial black,avant garde;Book Antiqua=book antiqua,palatino;Comic Sans MS=comic sans ms,sans-serif;Courier New=courier new,courier;Georgia=georgia,palatino;Helvetica=helvetica;Impact=impact,chicago;Raleway=Raleway;Symbol=symbol;Tahoma=tahoma,arial,helvetica,sans-serif;Terminal=terminal,monaco;Times New Roman=times new roman,times;Trebuchet MS=trebuchet ms,geneva;Verdana=verdana,geneva;Webdings=webdings;Wingdings=wingdings,zapf dingbats;';
+
+	    $init['font_formats'] = $font_formats . $custom_fonts;
+
+	    return $init;
+	}
+	add_filter('tiny_mce_before_init', 'load_custom_fonts');
 ?>
