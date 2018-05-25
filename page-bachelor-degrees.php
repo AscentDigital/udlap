@@ -10,7 +10,7 @@
        <div class="gridpanel-block"> 
          <div class="copy-block grid grid-md grid-right">
            <div class="title">
-             <?php the_content(); ?>
+             <?php the_title(); ?>
            </div>
            <div class="copy">
              <?php the_content(); ?>
