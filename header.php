@@ -161,7 +161,7 @@
       ?>
       <div class="headline container">
         <div class="text-center">
-          <span class="main-title"><?php echo $welcome['main_title']; ?></span> <br>
+          <span class="main-title"><?php echo $welcome['main_title']; ?></span>
           <span class="main-title strong">
             <?php echo $welcome['main_subtitle']; ?>
           </span>

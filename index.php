@@ -213,7 +213,7 @@
 
           <div class="copy-block grid grid-md grid-right">
             <div class="headliner">
-            <?php echo $contact_section['headline']; ?><br>
+            <?php echo $contact_section['headline']; ?>
               <div class="subheadline"><?php echo $contact_section['subheadline']; ?></div>
             </div>
             <div class="copy">
