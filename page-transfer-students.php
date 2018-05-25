@@ -1,5 +1,8 @@
 <?php  
 	get_header();
+  the_post();
+  $image1 = get_field('image1');
+  $image2 = get_field('image2');
 ?>
 <!-- Bachelor Degrees -->
     <section class="white-block more-below gridpanel-proper bachelor-proper container">  
@@ -7,18 +10,18 @@
        <div class="gridpanel-block"> 
          <div class="copy-block grid grid-md grid-right">
            <div class="title">
-             TRANSFER STUDENTS
+             <?php the_title(); ?>
            </div>
            <div class="copy">
-             Lorem ipsum dolor sit amet, eam cu partiendo expetendis. Ei tacimates aliquando eam, sea vitae exerci adversarium an.
+             <?php the_content(); ?>
            </div>
          </div> 
          <div class="image-grid">
             <div class="image-block">
-              <div style="background-image:url('./assets/img/phabout01.jpg')"></div>
+              <div style="background-image:url('<?php echo $image1['url']; ?>')"></div>
             </div>
             <div class="image-block">
-              <div style="background-image:url('./assets/img/phabout02.jpg')"></div>
+              <div style="background-image:url('<?php echo $image2['url']; ?>')"></div>
             </div>    
          </div>  
        </div> 
