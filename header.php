@@ -157,12 +157,13 @@
       </nav>
       <?php 
       if(is_front_page()){
-       ?>
+        $welcome = get_field('welcome_section');
+      ?>
       <div class="headline container">
         <div class="text-center">
-          <span class="main-title">WELCOME TO</span> <br>
+          <span class="main-title"><?php echo $welcome['main_title']; ?></span> <br>
           <span class="main-title strong">
-            UNIVERSIDAD DE LAS <br>AMÉRICAS PUEBLA
+            <?php echo $welcome['main_subtitle']; ?>
           </span>
         </div>
       </div>
