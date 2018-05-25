@@ -10,8 +10,8 @@
     <div class="copy">
       <?php echo $why_udlap['description']; ?>
     </div>
-    <a href="#" class="sticky-btn sticky-about">
-      Learn More
+    <a href="<?php echo $why_udlap['button_link']; ?>" class="sticky-btn sticky-about">
+      <?php echo $why_udlap['button_text']; ?>
     </a>
   </div> 
 </section>

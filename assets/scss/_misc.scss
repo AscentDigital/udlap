@@ -1,0 +1,103 @@
+ 
+
+/* Grid cosmetic components */
+.grid{
+	&:before{
+		position: absolute;
+		content: '';
+		background-image: url('../img/puntitos.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}  
+	&-left:before{
+		top: 20px;
+		left: 20px;
+		right: unset !important; 
+	}
+	&-right:before{
+		top: 20px;
+		right: 20px;
+		left: unset !important;
+	}
+	&-lg:before{
+		height: 50px;
+		width: 50px;
+	}
+	&-md:before{
+		height: 42px;
+		width: 42px;
+	}
+	&-sm:before{
+		height: 23px;
+		width: 23px;
+		top: 10px;
+		left: 10px;
+	}
+}
+
+
+/* Sticky button  */
+.sticky-btn{  
+    color: #534741;
+    min-height: 20px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 15px;
+    border: 2px solid #2E8683;
+    font-family: $rale;
+    font-weight: 800;
+    background-color: #FFFFFF;
+    transition: 0.3s ease-in-out;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    &:hover{
+    	text-decoration: none;
+    	background: #2E8683;
+    	color: #FFF;
+    }
+}
+
+
+/* Udlap Button */
+.udlap-btn{
+	color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+    line-height: 16px;
+    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.udlap-teal{
+	background: $teal;
+}
+
+a{
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+/* grid */
+@for $i from 1 through 12 {
+	[data-items="#{$i}"] > *{
+		width: calc(100% / #{$i});
+	}
+}
+
+/* More below icon */
+.more-below:after{
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translate(-50%, 50%) rotate(90deg);
+	width: 48px;
+	height: 48px;
+	box-shadow: 8px 0px 23px rgba(0,0,0,0.57);
+	content: '';
+	background-image: url('../img/arrows1.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: 4000;
+}
