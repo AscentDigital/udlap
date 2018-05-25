@@ -1,3 +1,6 @@
+p {
+    margin: 0 0 3px;
+}
 .banner.default {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
@@ -1451,8 +1454,4 @@
     font-family: raleway, sans-serif;
     color: #d9534f;
     font-weight: 400;
-}
-
-p {
-    margin: 0 0 3px;
 }
