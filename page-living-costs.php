@@ -1,54 +1,60 @@
 <?php  
-	get_header();
+  get_header();
+  the_post();
+  $image1 = get_field('image1');
+  $image2 = get_field('image2');
 ?>
-  <!-- Bachelor Degrees -->
+<!-- Bachelor Degrees -->
     <section class="white-block more-below gridpanel-proper bachelor-proper container">  
        <!-- bachelor Block -->
        <div class="gridpanel-block"> 
          <div class="copy-block grid grid-md grid-right">
            <div class="title">
-             LIVING COST
+             <?php the_title(); ?>
            </div>
            <div class="copy">
-             Lorem ipsum dolor sit amet, eam cu partiendo expetendis. Ei tacimates aliquando eam, sea vitae exerci adversarium an.
+             <?php the_content(); ?>
            </div>
          </div> 
          <div class="image-grid">
             <div class="image-block">
-              <div style="background-image:url('./assets/img/phabout01.jpg')"></div>
+              <div style="background-image:url('<?php echo $image1['url']; ?>')"></div>
             </div>
             <div class="image-block">
-              <div style="background-image:url('./assets/img/phabout02.jpg')"></div>
+              <div style="background-image:url('<?php echo $image2['url']; ?>')"></div>
             </div>    
-         </div>  
+         </div> 
        </div> 
-      
+       <?php  
+       if( have_rows('listing') ):
+       while ( have_rows('listing') ) : the_row();
+       ?>
        <div class="list-block">
-          <h1>ESTIMATED EXPENSES</h1>
+          <div class ="list-block-title"><?php echo get_sub_field('listing_title'); ?></div>
           <ul>
+            <?php  
+            if( have_rows('listing_details') ):
+            while ( have_rows('listing_details') ) : the_row();
+            ?>
             <li>
-              <p>Estimated Accommodation Costs On-Campus Housing</p>
-              <p>$25,000 - $35,000 MXN pesos per semester approximately, meals not included.</p>
+              <div class ="list-block-main"><?php echo get_sub_field('main_detail'); ?></div>
+              <div class ="list-block-sub"><?php echo get_sub_field('sub_detail'); ?></div>
             </li>
-            <li>
-              <p>Food</p>
-              <p>Around $5,000 pesos per month</p>
-            </li>
-            <li>
-              <p>Local Transportation</p>
-              <p>Buses are cheap, taxis are not too expensive. Plan on spending $1,000 pesos per month</p>
-            </li>
-            <li>
-              <p>Academic Costs</p>
-              <p>$2,000 pesos. Textbooks run about $500 pesos each, but can be more expensive.</p>
-            </li>
-            <li>
-              <p>Personal Expenses</p>
-              <p>Movies are cheap $60 - $80 pesos. A night at the club can cost up to $500 pesos.</p>
-            </li>
+            <?php 
+            endwhile;
+            else :
+                // no layouts found
+            endif;
+            ?>
           </ul>
        </div>
+        <?php 
+        endwhile;
+        else :
+            // no layouts found
+        endif;
+        ?> 
     </section>
 <?php
-	get_footer();
+  get_footer();
 ?>
