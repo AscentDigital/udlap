@@ -37,7 +37,7 @@
              while ( have_rows('listing') ) : the_row();
              ?>
              <div class="contactlist-proper"> 
-                <div class="title"><?php echo get_sub_field('listing_title'); ?></div> D
+                <div class="title"><?php echo get_sub_field('listing_title'); ?></div> 
                   <?php  
                   if( have_rows('listing_details') ):
                   while ( have_rows('listing_details') ) : the_row();
@@ -51,7 +51,7 @@
                   else :
                       // no layouts found
                   endif;
-                  ?>D
+                  ?>
              </div>
               <?php 
               endwhile;
