@@ -958,7 +958,7 @@
 	padding-left: 40px;
 	margin-top: 40px;
 }
-.facilities-list h1{
+.facilities-list .list-title{
 	line-height: 18px;
     color: #2E8683;
     font-size: 18px;

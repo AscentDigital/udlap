@@ -1,16 +1,19 @@
 <?php  
-	get_header();
+  get_header();
+  the_post();
+  $image1 = get_field('image1');
+  $image2 = get_field('image2');
 ?>
    <section class="white-block container facilities-section">
       <div class="basic-block">
         <div class="text-box">
           <div class="black-text">
-            Campus Facilities
+            <?php the_title(); ?>
           </div>
           <div class="details-text">
-            Lorem ipsum dolor sit amet, eam cu partiendo expetendis. Ei tacimates aliquando eam, sea vitae exerci adversarium an. Ne option adolescens eam, dolores verterem delicata ut ius.
+            <?php the_content(); ?>
           </div>
-          <a href="#">
+          <a href="<?php echo the_field('url') ?>">
           <div class="gallery-link">
              Visit Facilities Gallery 
           </div>
@@ -21,38 +24,64 @@
         <div class="row">
           <div class="col-md-6 col-sm-6 text-center">
             <div class="image-box">
-              <img src="./assets/img/galleries1.jpg">
+              <img src="<?php echo $image1['url']; ?>">
             </div>
           </div>
           <div class="col-md-6 col-sm-6 text-center">
             <div class="image-box">
-              <img src="./assets/img/galleries2.jpg">
+              <img src="<?php echo $image2['url']; ?>">
             </div>
           </div>
           <div class="col-md-6 col-sm-6 text-center">
             <div class="image-box">
-              <img src="./assets/img/galleries3.jpg">
+              <img src="<?php echo $image3['url']; ?>">
             </div>
           </div>
           <div class="col-md-6 col-sm-6 text-center">
             <div class="image-box">
-              <img src="./assets/img/galleries4.jpg">
+              <img src="<?php echo $image4['url']; ?>">
             </div>
           </div>
           <div class="col-md-6 col-sm-6 text-center">
             <div class="image-box">
-              <img src="./assets/img/galleries5.jpg">
+              <img src="<?php echo $image5['url']; ?>">
             </div>
           </div>
           <div class="col-md-6 col-sm-6 text-center">
             <div class="image-box">
-              <img src="./assets/img/galleries6.jpg">
+              <img src="<?php echo $image6['url']; ?>">
             </div>
           </div>
         </div>
       </div>
+       <?php  
+       if( have_rows('listing') ):
+       while ( have_rows('listing') ) : the_row();
+       ?>
+       <div class="list-block">
+          <div class ="list-title"><?php echo get_sub_field('listing_title'); ?></div>
+          <ul>
+            <?php  
+            if( have_rows('listing_details') ):
+            while ( have_rows('listing_details') ) : the_row();
+            ?>
+            <li><?php echo get_sub_field('detail'); ?></li>
+            <?php 
+            endwhile;
+            else :
+                // no layouts found
+            endif;
+            ?>
+          </ul>
+       </div>
+        <?php 
+        endwhile;
+        else :
+            // no layouts found
+        endif;
+        ?> 
       <div class="facilities-list">
-        <h1>BUILDING OR FACILITY CATEGORY</h1>
+        <div class ="list-title">BUILDING OR FACILITY CATEGORY</div>
         <ul>
           <li>Building or facility name</li>
           <li>Building or facility name</li>

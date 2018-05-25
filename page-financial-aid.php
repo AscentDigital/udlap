@@ -1,10 +1,10 @@
 <?php  
-  get_header();
+	get_header();
   the_post();
   $image1 = get_field('image1');
   $image2 = get_field('image2');
 ?>
-<!-- Bachelor Degrees -->
+ <!-- Bachelor Degrees -->
     <section class="white-block more-below gridpanel-proper bachelor-proper container">  
        <!-- bachelor Block -->
        <div class="gridpanel-block"> 
@@ -23,24 +23,9 @@
             <div class="image-block">
               <div style="background-image:url('<?php echo $image2['url']; ?>')"></div>
             </div>    
-         </div> 
+         </div>  
        </div> 
-       <?php  
-       if( have_rows('listing') ):
-       while ( have_rows('listing') ) : the_row();
-       ?>
-       <div class="p-list-block">
-          <div class="p-content">
-            <?php echo get_sub_field('content'); ?>
-          </div>
-        </div>
-        <?php 
-        endwhile;
-        else :
-            // no layouts found
-        endif;
-        ?> 
-    </section>
+</section>
 <?php
 	get_footer();
 ?>
