@@ -99,6 +99,22 @@
 	}
 	add_action( 'init', 'gallery_cpt' );
 
+	function updates_cpt() {
+		register_post_type( 'updates', array(
+		  'labels' => array(
+		    'name' => 'Updates',
+		    'singular_name' => 'Update',
+		   ),
+		  'description' => 'Update Custom Post Type',
+		  'public' => true,
+		  'publicly_queryable' => true,
+		  'menu_position' => 20,
+		  'supports' => array( 'title', 'editor', 'custom-fields', 'author', 'thumbnail', 'excerpt' ),
+		  'taxonomies' => array('category')
+		));
+	}
+	add_action( 'init', 'updates_cpt' );
+
 	function videos_cpt() {
 		register_post_type( 'videos', array(
 		  'labels' => array(

@@ -1286,6 +1286,162 @@ p {
 	  color: #2E8683;
 	  font-size: 30px;
 }
+/* POST CSS*/
+
+.post-section{
+	position: relative;
+	margin-bottom: 150px;
+	margin-top: 60px;
+	padding: 0px 20px 0 10px;
+}
+.post-section .basic-block{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.post-section .image-block{
+	left:30px;
+	top:4px;
+}
+.post-section .image-block:before{
+	content: '';
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	background-image: url(../img/mas.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	top: -0px;
+	left: -45px;
+	z-index: 1001;
+}
+.post-section .image-block .image-box {
+    height: 310px;
+    width: 78%;
+}
+.post-section .image-block .image-box img {
+    margin-top: -20px;
+    position: relative;
+    left: -20px;
+    height: 310px;
+    width: 100%;
+}
+.post-section .basic-block .text-box{
+	  position: relative;
+	  padding: 40px 90px 35px 40px;
+	  width: 60%;
+	  margin-left: 45%;
+}
+.post-section .basic-block .text-box:before{
+	position: absolute;
+	width: 29px;
+	height: 29px;
+    content: '';
+    background-image: url(../img/puntitos.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    top:10px;
+    right: 70px;
+}
+.post-section .basic-block .black-text{
+	line-height: 30px;
+    font-size: 30px;
+    text-align: left;
+    font-family: raleway, sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.post-section .basic-block .gray-text{
+	line-height: 24px;
+    color: #7F7F7F;
+    font-size: 16px;
+    text-align: left;
+    font-family: raleway, sans-serif;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.post-section .basic-block .details-text{
+	line-height: 32px;
+    color: #7F7F7F;
+    font-size: 20px;
+    text-align: justify;
+    font-family: raleway, sans-serif;
+    font-weight: 400;
+}
+.post-section .basic-block .gray-text:before{
+	content: '';
+	position: absolute;
+	border: 3px solid #2E8683;
+	width:60px;    
+	margin-top: 40px;
+	margin-left: 0px;	
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.post-section .basic-block .text-box:before{
+		right: 17px;
+	}
+	.post-section .image-block:before{
+		left: 35px;
+	}
+	.post-section .basic-block:before{
+		display: block;
+		left: -25px;
+	}
+	.post-section .basic-block .text-box{
+		width: 100%;
+		margin-left: 0;
+	}
+	.post-section{
+		margin-bottom: 100px;
+	}
+	.post-section .image-block {
+		left: 0;
+	}
+	.post-section .basic-block {
+		margin-top: 0px;
+	}
+}
+
+@media (max-width: 767px) {
+	.post-section .basic-block {
+		margin-top: 20px;
+		margin-bottom: 0px;
+	}
+	.post-section .image-block .image-box {
+		display: inline-block;
+		height: 170px;
+	}
+	.post-section .image-block .image-box img{
+		height: auto;
+	}
+	.post-section .image-block:before{
+		left: 0px;
+		top: 10px;
+		height: 32px;
+		width: 32px;
+	}
+	.post-section .image-block {
+		left: 0;
+	}
+	.post-section .basic-block:before{
+		display: block;
+		left: -15px;
+	}
+	.post-section .basic-block .text-box{
+		width: 100%;
+		padding: 30px 10px 30px 10px;
+		margin-left: 0;
+	}
+	.post-section .basic-block .text-box:before{
+		right: 10px;
+	}
+	.post-section{
+		margin-bottom: 100px;
+		margin-top: 0px;
+	}
+}
+/* END POST CSS*/
 @media (min-width: 768px) and (max-width: 1024px) {
 	.videos-section .video-thumbnail .video-link:after{
 		width: 200px;

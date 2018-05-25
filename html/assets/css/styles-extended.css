@@ -1,3 +1,6 @@
+p {
+    margin: 0 0 3px;
+}
 .banner.default {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
@@ -333,9 +336,7 @@
 	left: 45%;
     background-color: #C1C0C2;
     border-radius: 50%;
-    padding-bottom: 46px;
     position: relative;
-    margin-top: 20px;
 }
 
 .videos-section:before{
@@ -400,7 +401,7 @@
 	background-position: center;
 }
 .videos-section .text-box{
-	padding: 15px 80px 15px 80px;
+	padding: 15px 30px 15px 30px;
 }
 
 .videos-section .text-box .video-title{
@@ -419,14 +420,6 @@
     font-family: raleway, sans-serif;
     font-weight: 500;
     margin-top: 30px;
-}
-.videos-section .text-box .video-title:before{
-	content: '';
-	position: absolute;
-	border: 1px solid #D4D3D3;
-	width:40px;    
-	margin-top: 60px;
-	margin-left: 45px;	
 }
 .videos-section .text-box a{
     color: #000 !important;
@@ -468,7 +461,7 @@
 	height: auto;
 }
 
-.galleries-section .gallery-thumbnail .gallery-link:before{
+.galleries-section .gallery-thumbnail .g-link:before{
 	content: '';
 	position: absolute;
 	width: 32px;
@@ -812,7 +805,7 @@
 	padding-left: 80px;
 	padding-right: 80px;
 }
-.list-block h1{
+.list-block .list-block-title{
 	line-height: 20px;
     color: #2E8683;
     font-size: 20px;
@@ -845,11 +838,11 @@
 	  font-size: 30px;
 }
 
-.list-block p{
+.list-block .list-block-main{
 	margin-left: 28px;
 	margin-top: -18px;
 }
-.list-block p:nth-child(2) {
+.list-block .list-block-sub {
 	color: #3D3D3D;
     font-size: 16px;
     text-transform: none;
@@ -859,7 +852,10 @@
     margin-left: 28px;
     margin-top: 2px;
 }
-
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 @media (max-width: 767px) {
 	.list-block{
 		padding-left: 10px;
@@ -965,7 +961,7 @@
 	padding-left: 40px;
 	margin-top: 40px;
 }
-.facilities-list h1{
+.facilities-list .list-title{
 	line-height: 18px;
     color: #2E8683;
     font-size: 18px;
@@ -978,11 +974,6 @@
     list-style: none; /* Remove list bullets */
     padding: 0;
     margin: 0;
-}
-
-.facilities-list li:before {
-    content: "-";
-    padding-right: 8px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1295,6 +1286,162 @@
 	  color: #2E8683;
 	  font-size: 30px;
 }
+/* POST CSS*/
+
+.post-section{
+	position: relative;
+	margin-bottom: 150px;
+	margin-top: 60px;
+	padding: 0px 20px 0 10px;
+}
+.post-section .basic-block{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.post-section .image-block{
+	left:30px;
+	top:4px;
+}
+.post-section .image-block:before{
+	content: '';
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	background-image: url(../img/mas.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	top: -0px;
+	left: -45px;
+	z-index: 1001;
+}
+.post-section .image-block .image-box {
+    height: 310px;
+    width: 78%;
+}
+.post-section .image-block .image-box img {
+    margin-top: -20px;
+    position: relative;
+    left: -20px;
+    height: 310px;
+    width: 100%;
+}
+.post-section .basic-block .text-box{
+	  position: relative;
+	  padding: 40px 90px 35px 40px;
+	  width: 60%;
+	  margin-left: 45%;
+}
+.post-section .basic-block .text-box:before{
+	position: absolute;
+	width: 29px;
+	height: 29px;
+    content: '';
+    background-image: url(../img/puntitos.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    top:10px;
+    right: 70px;
+}
+.post-section .basic-block .black-text{
+	line-height: 30px;
+    font-size: 30px;
+    text-align: left;
+    font-family: raleway, sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.post-section .basic-block .gray-text{
+	line-height: 24px;
+    color: #7F7F7F;
+    font-size: 16px;
+    text-align: left;
+    font-family: raleway, sans-serif;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.post-section .basic-block .details-text{
+	line-height: 32px;
+    color: #7F7F7F;
+    font-size: 20px;
+    text-align: justify;
+    font-family: raleway, sans-serif;
+    font-weight: 400;
+}
+.post-section .basic-block .gray-text:before{
+	content: '';
+	position: absolute;
+	border: 3px solid #2E8683;
+	width:60px;    
+	margin-top: 40px;
+	margin-left: 0px;	
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.post-section .basic-block .text-box:before{
+		right: 17px;
+	}
+	.post-section .image-block:before{
+		left: 35px;
+	}
+	.post-section .basic-block:before{
+		display: block;
+		left: -25px;
+	}
+	.post-section .basic-block .text-box{
+		width: 100%;
+		margin-left: 0;
+	}
+	.post-section{
+		margin-bottom: 100px;
+	}
+	.post-section .image-block {
+		left: 0;
+	}
+	.post-section .basic-block {
+		margin-top: 0px;
+	}
+}
+
+@media (max-width: 767px) {
+	.post-section .basic-block {
+		margin-top: 20px;
+		margin-bottom: 0px;
+	}
+	.post-section .image-block .image-box {
+		display: inline-block;
+		height: 170px;
+	}
+	.post-section .image-block .image-box img{
+		height: auto;
+	}
+	.post-section .image-block:before{
+		left: 0px;
+		top: 10px;
+		height: 32px;
+		width: 32px;
+	}
+	.post-section .image-block {
+		left: 0;
+	}
+	.post-section .basic-block:before{
+		display: block;
+		left: -15px;
+	}
+	.post-section .basic-block .text-box{
+		width: 100%;
+		padding: 30px 10px 30px 10px;
+		margin-left: 0;
+	}
+	.post-section .basic-block .text-box:before{
+		right: 10px;
+	}
+	.post-section{
+		margin-bottom: 100px;
+		margin-top: 0px;
+	}
+}
+/* END POST CSS*/
 @media (min-width: 768px) and (max-width: 1024px) {
 	.videos-section .video-thumbnail .video-link:after{
 		width: 200px;
@@ -1451,4 +1598,16 @@
 	.content-text{
 		padding: 10px 10px 10px 10px;
 	}
+}
+.videos-hr{
+	margin-top: 23px;
+    margin-bottom: 0px;
+    width: 40px;
+    border: 1px solid #D4D3D3;
+}
+
+.error{
+    font-family: raleway, sans-serif;
+    color: #d9534f;
+    font-weight: 400;
 }
