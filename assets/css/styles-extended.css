@@ -802,7 +802,7 @@
 	padding-left: 80px;
 	padding-right: 80px;
 }
-.list-block h1{
+.list-block .list-block-title{
 	line-height: 20px;
     color: #2E8683;
     font-size: 20px;
@@ -835,11 +835,11 @@
 	  font-size: 30px;
 }
 
-.list-block p{
+.list-block .list-block-main{
 	margin-left: 28px;
 	margin-top: -18px;
 }
-.list-block p:nth-child(2) {
+.list-block .list-block-sub {
 	color: #3D3D3D;
     font-size: 16px;
     text-transform: none;

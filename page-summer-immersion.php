@@ -30,15 +30,15 @@
        while ( have_rows('listing') ) : the_row();
        ?>
        <div class="list-block">
-          <h1><?php echo get_sub_field('listing_title'); ?></h1>
+          <span class ="list-block-title"><?php echo get_sub_field('listing_title'); ?></span>
           <ul>
             <?php  
             if( have_rows('listing_details') ):
             while ( have_rows('listing_details') ) : the_row();
             ?>
             <li>
-              <?php echo get_sub_field('main_detail'); ?>
-              <?php echo get_sub_field('sub_detail'); ?>
+              <span class ="list-block-main"><?php echo get_sub_field('main_detail'); ?></span>
+              <span class ="list-block-sub"><?php echo get_sub_field('sub_detail'); ?></span>
             </li>
             <?php 
             endwhile;
