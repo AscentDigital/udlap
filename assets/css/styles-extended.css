@@ -419,7 +419,7 @@ p {
     text-align: center;
     font-family: raleway, sans-serif;
     font-weight: 500;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 .videos-section .text-box a{
     color: #000 !important;
@@ -669,7 +669,7 @@ p {
 }
 
 @media (max-width: 767px) {
-	
+
 	.galleries-section .text-box{
 	padding: 15px 15px;
 	}
