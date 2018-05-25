@@ -1411,12 +1411,13 @@ p {
 	.post-section .image-block .image-box {
 		display: inline-block;
 		height: 230px;
+		margin-left: 20px;
 	}
 	.post-section .image-block .image-box img{
 		height: 230px;
 	}
 	.post-section .image-block:before{
-		left: 0px;
+		left: 10px;
 		top: 10px;
 		height: 32px;
 		width: 32px;
