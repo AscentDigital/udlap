@@ -10,7 +10,7 @@
             <?php the_title(); ?>
           </div>
           <div class="gray-text">
-            <?php get_the_date(); ?>
+            <?php get_the_date('F j, Y'); ?>
           </div>
           <div class="details-text">
             <?php echo the_field('details'); ?>

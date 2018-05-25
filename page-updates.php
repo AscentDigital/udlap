@@ -34,7 +34,7 @@
                     <a href="#">
                       <div class="title"><?php the_title(); ?></div>
                     </a>
-                    <div class="date"><?php get_the_date(); ?></div>
+                    <div class="date"><?php get_the_date('F j, Y'); ?></div>
 
                     <div class="copy">
                         <?php echo the_field('details'); ?>
