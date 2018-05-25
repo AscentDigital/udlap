@@ -57,7 +57,7 @@
 		$body .= 'Message: ' . $message;
 
 		$success = 'false';
-		if(wp_mail(get_option('udlap_recipient_email', 'stephan.sutter2000@gmail.com'), 'Contact Form', $body)){
+		if(wp_mail(get_option('udlap_recipient_email', ''), 'Contact Form', $body)){
 			$success = 'true';
 		}
 
@@ -145,4 +145,32 @@
 		));
 	}
 	add_action( 'init', 'brochures_cpt' );
+
+	add_action('admin_menu', 'theme_contact_setup_menu');
+ 
+	function theme_contact_setup_menu(){
+	    add_menu_page( 'Theme Options', 'Theme Options', 'manage_options', 'theme-option', 'init' );
+	}
+	 
+	function init(){
+		include get_template_directory() . '/includes/theme-options.php';
+	}
+
+	function update_theme_options(){
+		$email = $_POST['recipient-email'];
+		$facebook = $_POST['facebook'];
+		$instagram = $_POST['instagram'];
+		$twitter = $_POST['twitter'];
+		$youtube = $_POST['youtube'];
+		update_option('udlap_recipient_email', $email);
+		update_option('udlap_facebook', $facebook);
+		update_option('udlap_instagram', $instagram);
+		update_option('udlap_twitter', $twitter);
+		update_option('udlap_youtube', $youtube);
+		wp_redirect(admin_url('admin.php?page=theme-option&success'));
+		exit;
+	}
+
+	add_action( 'admin_post_nopriv_udlap_update_theme_options', 'update_theme_options' );
+	add_action( 'admin_post_udlap_update_theme_options', 'update_theme_options' );
 ?>
