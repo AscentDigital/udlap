@@ -30,7 +30,7 @@
                       <img src="<?php echo $image['url']; ?>">
                     </div>
                   </div>
-                  <a href="<?php echo $file['url']; ?>" target = "_blank">
+                  <a href="<?php echo $file['url']; ?>" target = "_blank" download>
                   <div class="panel-footer">
                     Download Here
                   </div>

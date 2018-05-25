@@ -105,7 +105,7 @@
         </div>
         <div class="downloads-block grid grid-md grid-right">
           <div class="brochure-proper">
-            <a href="<?php echo $file['url']; ?>" class="brochure-block">
+            <a href="<?php echo $file['url']; ?>" class="brochure-block" download>
               <img src="<?php echo $image['url']; ?>" alt="brochure">
             </a> 
           </div>

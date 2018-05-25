@@ -20,7 +20,7 @@
         <div class="map-block">
           <div class="map-content">
             <a href="<?php echo $image1['url']; ?>" target ="_blank" class ="fullscreen">Click to View Fullscreen</a>
-            <a href="<?php echo $image1['url']; ?>" target ="_blank" class ="download">Click to Download Map</a>
+            <a href="<?php echo $image1['url']; ?>" target ="_blank" class ="download" download>Click to Download Map</a>
           </div>
         </div>
       </div>
