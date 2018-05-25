@@ -493,7 +493,7 @@ p {
     text-align: center;
     font-family: raleway, sans-serif;
     font-weight: 500;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 .galleries-section .text-box a{
     color: #000 !important;
@@ -662,10 +662,17 @@ p {
 		display: block;
 		left:50%;
 	}
+	.galleries-section .text-box{
+	padding: 15px 15px;
+	}
 
 }
 
 @media (max-width: 767px) {
+	
+	.galleries-section .text-box{
+	padding: 15px 15px;
+	}
 	.gallery-section{
 		padding-left: 15px;
 		padding-right: 15px;
@@ -1593,7 +1600,7 @@ p {
 	}
 }
 .videos-hr{
-	margin-top: 23px;
+	margin-top: 15px;
     margin-bottom: 0px;
     width: 40px;
     border: 1px solid #D4D3D3;
