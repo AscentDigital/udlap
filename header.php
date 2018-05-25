@@ -74,39 +74,6 @@
           echo $html;
         }
       ?>
-      <!-- <div class="active"> 
-        <a href="http://udlap.seventy4media.com/">HOME</a>  
-      </div>
-      <div  data-toggle="collapse" data-target="#about"> 
-        <a href="javascript:void(0);">ABOUT</a>
-        <div id="about" class="collapse">
-          <a href="http://udlap.seventy4media.com/our-institution/">Our institution</a>
-          <a href="http://udlap.seventy4media.com/accreditation/">Accreditations</a>
-          <a href="#">Campus tour</a>
-          <a href="http://udlap.seventy4media.com/videos/">Videos</a>
-          <a href="./gallery.html">gallery</a>
-          <a href="./brochures.html">Brochures</a>
-        </div>  
-      </div>
-      <div data-toggle="collapse" data-target="#menu2"> 
-        <a href="javascript:void(0);">Programs</a>
-        <div id="menu2" class="collapse">
-          <a href="#">Bachelor Degrees</a>
-          <a href="#">Transfer Students</a>  
-          <a href="#">Summer Immersion</a>  
-        </div> 
-      </div>
-      <div data-toggle="collapse" data-target="#menu3"> <a href="javascript:void(0);">Student life</a> 
-        <div id="menu3" class="collapse">
-          <a href="#">Facilities</a>
-          <a href="#">Activities</a>
-          <a href="#">Living Costs</a>
-          <a href="#">Safety in Puebla</a>
-          <a href="#">Campus Map</a>
-        </div> 
-      </div> 
-        <div> <a href="javascript:void(0);"></a>Financial Aid</div>
-        <div> <a href="javascript:void(0);">Contact</a> </div> -->
       </div>
     </div>
 

@@ -19,9 +19,7 @@
       </div>
       <?php  
                 if( have_rows('education') ):
-
-                   // loop through the rows of data
-                  while ( have_rows('education') ) : the_row();
+                while ( have_rows('education') ) : the_row();
                 $img = get_sub_field('image');
       ?>
               <div class="accreditators">
@@ -38,7 +36,7 @@
                   // no layouts found
 
               endif;
-              ?> ?>
+              ?> 
     </section>
     
 <?php
