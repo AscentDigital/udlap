@@ -19,13 +19,13 @@
       <div class="map-pad">
         <div class="map-block">
           <div class="map-content">
-            <a href="<?php echo $image2['url']; ?>" target ="_blank" class ="fullscreen">Click to View Fullscreen</a>
-            <a href="<?php echo $image2['url']; ?>" target ="_blank" class ="download">Click to Download Map</a>
+            <a href="<?php echo $image1['url']; ?>" target ="_blank" class ="fullscreen">Click to View Fullscreen</a>
+            <a href="<?php echo $image1['url']; ?>" target ="_blank" class ="download">Click to Download Map</a>
           </div>
         </div>
       </div>
       <div class="map-image">
-        <img src="<?php echo $image2['url']; ?>">
+        <img src="<?php echo $image1['url']; ?>">
       </div>
     </section>
 <?php
