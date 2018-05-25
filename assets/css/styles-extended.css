@@ -1448,3 +1448,9 @@
     width: 40px;
     border: 1px solid #D4D3D3;
 }
+
+.error{
+    font-family: raleway, sans-serif;
+    color: #d9534f;
+    font-weight: 400;
+}

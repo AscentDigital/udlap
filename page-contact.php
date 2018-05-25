@@ -1,7 +1,7 @@
 <?php  
 	get_header();
 ?>
-<!-- Contact -->
+ <!-- Contact -->
     <section class="white-block more-below gridpanel-proper connect-proper container"> 
        
 
@@ -83,8 +83,67 @@
             </div>
 
          </div>
-         <div class="col-md-6 col-sm-12">
-           asd
+         <div class="col-md-6 col-sm-12 contact-section form-section">
+           <div class="form-proper">
+             <div class="form-block">
+                <div class="title">Are you ready to UDLAP</div>
+                <div class="input-proper">
+                  <input type="text" placeholder="Full Name">
+                </div>
+                <div class="input-proper">
+                  <input type="email" placeholder="Email">
+                </div>
+                <div class="input-proper">
+                  <input type="tel" placeholder="Phone Number">
+                </div>
+                <div class="input-proper">
+                  <input type="text" placeholder="City and State">
+                </div>
+                <div class="input-proper custom-select">
+                  <select>
+                    <option value="0">What is your interest of study?</option>
+                    <option value="1">Select 1</option>
+                    <option value="2">Select 2</option>
+                    <option value="3">Select 3</option>
+                    <option value="4">Select 4</option>
+                    <option value="5">Select 5</option> 
+                  </select>
+                </div>
+                <div class="input-proper custom-select">
+                  <select>
+                    <option value="0">When would you like to pursue your area of study?</option>
+                    <option value="1">Select 1</option>
+                    <option value="2">Select 2</option>
+                    <option value="3">Select 3</option>
+                    <option value="4">Select 4</option>
+                    <option value="5">Select 5</option> 
+                  </select>
+                </div> 
+                <div class="input-proper custom-select">
+                  <select>
+                    <option value="0">Major(s) of interest</option>
+                    <option value="1">Select 1</option>
+                    <option value="2">Select 2</option>
+                    <option value="3">Select 3</option>
+                    <option value="4">Select 4</option>
+                    <option value="5">Select 5</option> 
+                  </select>
+                </div>  
+                <div class="input-proper custom-select">
+                  <select>
+                    <option value="0">Are you interested in visiting our campus?</option>
+                    <option value="1">Select 1</option>
+                    <option value="2">Select 2</option>
+                    <option value="3">Select 3</option>
+                    <option value="4">Select 4</option>
+                    <option value="5">Select 5</option> 
+                  </select>
+                </div>  
+
+                <button type="submit" class="udlap-btn udlap-teal sticky-btn sticky-inquiry">SUBMIT</button>
+
+             </div>
+           </div>
          </div>
        </div>
 
