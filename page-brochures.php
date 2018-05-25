@@ -1,13 +1,13 @@
 <?php  
 	get_header();
 ?>
-<section class="white-block container videos-section">
+<section class="white-block container brochures-section">
           <div class="row">
             <?php  
             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
             $args = array(
-                'post_type' => 'videos',
+                'post_type' => 'brochures',
                 'paged' => $paged,
                 'posts_per_page' => 9,
                 'order' => 'DESC',
@@ -17,21 +17,24 @@
             if($query->have_posts()){
               while($query->have_posts()){
                 $query->the_post();
-                $image = get_field('thumbnail');
+                $image = get_field('image');
+                $file = get_field('file');
             ?>
-            <div class ="col-md-4">
-              <div class="video-box">
-                <div class="video-thumbnail">
-                  <a href="<?php the_permalink(); ?>" class ="video-link">
-                  <img src="<?php echo $image['url']; ?>" class ="video">
-                  </a>
-                  <div class="text-box">
-                    <p class ="video-title"><a href=""><?php the_title(); ?></a>
-                      <hr class="videos-hr">
+            <div class="col-md-4">
+              <div class="panel panel-default panel-brochures">
+                  <div class="panel-body">
+                    <p class="brochure-title">
+                      <?php the_title(); ?>
                     </p>
-                    <p class ="video-date"><?php echo get_field('date'); ?></p>
+                    <div class="brochure-image">
+                      <img src="<?php echo $image['url']; ?>">
+                    </div>
                   </div>
-                </div>
+                  <a href="<?php echo $file['url']; ?>" target = "_blank">
+                  <div class="panel-footer">
+                    Download Here
+                  </div>
+                  </a>
               </div>
             </div>
             <?php
@@ -42,7 +45,6 @@
           </div>
           <?php get_template_part('pagination'); ?> 
 </section>
-
 <?php
 	get_footer();
 ?>

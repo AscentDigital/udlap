@@ -1,13 +1,13 @@
 <?php  
-	get_header();
+  get_header();
 ?>
-<section class="white-block container videos-section">
+<section class="white-block container galleries-section">
           <div class="row">
             <?php  
             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
             $args = array(
-                'post_type' => 'videos',
+                'post_type' => 'gallery',
                 'paged' => $paged,
                 'posts_per_page' => 9,
                 'order' => 'DESC',
@@ -20,16 +20,14 @@
                 $image = get_field('thumbnail');
             ?>
             <div class ="col-md-4">
-              <div class="video-box">
-                <div class="video-thumbnail">
-                  <a href="<?php the_permalink(); ?>" class ="video-link">
-                  <img src="<?php echo $image['url']; ?>" class ="video">
+              <div class="gallery-box">
+                <div class="gallery-thumbnail">
+                  <a href="<?php the_permalink(); ?>" class ="g-link">
+                  <img src="<?php echo $image['url']; ?>" class ="gallery">
                   </a>
                   <div class="text-box">
-                    <p class ="video-title"><a href=""><?php the_title(); ?></a>
-                      <hr class="videos-hr">
-                    </p>
-                    <p class ="video-date"><?php echo get_field('date'); ?></p>
+                    <p class ="gallery-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                    <p class ="gallery-date"><?php echo get_field('date'); ?></p>
                   </div>
                 </div>
               </div>
@@ -42,7 +40,6 @@
           </div>
           <?php get_template_part('pagination'); ?> 
 </section>
-
 <?php
-	get_footer();
+  get_footer();
 ?>
