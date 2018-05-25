@@ -58,4 +58,34 @@
     $('.mobile-nav-close-trigger').on('click', function(){
         hideMobileNav();
     });
+
+    $("#contact-form").validate({
+        rules: {
+            name: {
+                required: true
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            message: {required: true},
+        },
+        submitHandler: function(form) {
+            $('#contact-submit').text('Sending...').attr('disabled', true);
+            var data = $(form).serialize();
+
+            $.ajax({
+                type: "POST",
+                url: udlap_contact_form_vars.ajaxUrl,
+                data: $(form).serialize() + '&nonce=' + udlap_contact_form_vars.nonce + '&action=udlap_contact_form',
+                success: function () {
+                    $('#contact-success').show();
+                    $('#contact-submit').text('Send').attr('disabled', false);
+                }
+            });
+
+            return false;
+        }
+    });
+   
 })( jQuery );

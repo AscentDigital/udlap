@@ -153,33 +153,35 @@
       
 
       <!-- contact block 2 - questions -->
+      <?php $contact_section = get_field('contact_section'); ?>
       <div class="contact-block inquiry-proper">
 
         <div class="inquiry-block">
 
           <div class="copy-block grid grid-md grid-right">
             <div class="headliner">
-            Do you have<br>questions?<br>
-              <div class="subheadline">SEND US A FEW LINES</div>
+            <?php echo $contact_section['headline']; ?><br>
+              <div class="subheadline"><?php echo $contact_section['subheadline']; ?></div>
             </div>
             <div class="copy">
-              Lorem ipsum dolor sit amet, eam cu partiendo expetendis. Ei tacimates aliquando eam.
+               <?php echo $contact_section['description']; ?>
             </div>
           </div>
-
+          <form id="contact-form">
           <div class="form-block">
+            <div class="alert alert-success" id="contact-success" style="display: none;">Your submission has been sent.</div>
             <div class="input-proper">
-              <input type="text" placeholder="Enter Name">
+              <input type="text" placeholder="Enter Name" name="name">
             </div>
             <div class="input-proper">
-              <input type="text" placeholder="Enter Email">
+              <input type="text" placeholder="Enter Email" name="email">
             </div>
             <div class="input-proper">
-              <textarea placeholder="Enter Your Message"></textarea>
+              <textarea placeholder="Enter Your Message" name="message"></textarea>
             </div>
-            <button type="submit" class="udlap-btn udlap-teal sticky-btn sticky-inquiry">SEND</button>
+            <button id="contact-submit" type="submit" class="udlap-btn udlap-teal sticky-btn sticky-inquiry">SEND</button>
           </div>
-
+          </form>
         </div>
 
       </div>
