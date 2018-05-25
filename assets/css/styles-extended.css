@@ -1410,10 +1410,10 @@ p {
 	}
 	.post-section .image-block .image-box {
 		display: inline-block;
-		height: 170px;
+		height: 230px;
 	}
 	.post-section .image-block .image-box img{
-		height: 170px;
+		height: 230px;
 	}
 	.post-section .image-block:before{
 		left: 0px;
