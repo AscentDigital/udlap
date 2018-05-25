@@ -493,15 +493,7 @@ p {
     text-align: center;
     font-family: raleway, sans-serif;
     font-weight: 500;
-    margin-top: 30px;
-}
-.galleries-section .text-box .gallery-title:before{
-	content: '';
-	position: absolute;
-	border: 1px solid #D4D3D3;
-	width:40px;    
-	margin-top: 60px;
-	margin-left: 45px;	
+    margin-top: 25px;
 }
 .galleries-section .text-box a{
     color: #000 !important;

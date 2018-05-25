@@ -27,6 +27,7 @@
                   </a>
                   <div class="text-box">
                     <p class ="gallery-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                    <hr class="videos-hr">
                     <p class ="gallery-date"><?php echo get_field('date'); ?></p>
                   </div>
                 </div>
