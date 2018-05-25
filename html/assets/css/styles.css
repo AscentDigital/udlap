@@ -117,6 +117,12 @@ nav .nav-proper .nav-block > div.opened {
 nav .nav-proper .nav-block > div.opened a {
   text-decoration: none;
 }
+nav .nav-proper .nav-block .has-sub:hover {
+  border-left: 2px solid #FFF;
+}
+nav .nav-proper .nav-block .has-sub:hover > .submenu, nav .nav-proper .nav-block .has-sub .submenu:hover {
+  display: block;
+}
 nav .nav-proper .nav-block .has-sub .submenu {
   display: none;
   position: absolute;
@@ -1000,6 +1006,155 @@ a:hover {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   line-height: 19px;
+}
+
+.contact-section .form-section {
+  position: relative;
+}
+.contact-section .form-proper {
+  position: relative;
+  padding-right: 40px;
+  width: 100%;
+}
+.contact-section .form-block {
+  border: 3px solid #D4D3D3;
+  position: relative;
+  padding: 30px 0px 30px 50px;
+  width: 100%;
+}
+.contact-section .form-block .title {
+  line-height: 34px;
+  color: #2E8683;
+  font-size: 28px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+.contact-section .form-block [type="submit"] {
+  margin-top: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.contact-section .form-block .input-proper {
+  width: 106%;
+  margin-bottom: 15px;
+  position: relative;
+}
+.contact-section .form-block .input-proper input, .contact-section .form-block .input-proper textarea {
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+  border: 0px;
+  padding: 15px 15px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666666;
+  font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.contact-section .form-block .input-proper input::placeholder, .contact-section .form-block .input-proper textarea::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #7F7F7F;
+  opacity: 1;
+  /* Firefox */
+}
+.contact-section .form-block .input-proper input:-ms-input-placeholder, .contact-section .form-block .input-proper textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #7F7F7F;
+}
+.contact-section .form-block .input-proper input::-ms-input-placeholder, .contact-section .form-block .input-proper textarea::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #7F7F7F;
+}
+.contact-section .form-block .input-proper textarea {
+  resize: none;
+  height: 100px;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #FFF;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "\f0d7";
+  top: 15px;
+  font-size: 30px;
+  color: #000;
+  right: 35px;
+  width: 0;
+  height: 0;
+  font-family: FontAwesome;
+  z-index: 500;
+}
+
+.select-selected:before {
+  position: absolute;
+  content: '';
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  width: 50px;
+  z-index: 200;
+  background: #C8C8C8;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  position: absolute;
+  content: "\f0d8";
+  top: 15px;
+  font-size: 30px;
+  color: #000;
+  right: 35px;
+  width: 0;
+  height: 0;
+  font-family: FontAwesome;
+  z-index: 500;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+  font-size: 20px;
+  line-height: 20px;
+  color: #666666;
+  font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  padding: 15px;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #FFF;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 700;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .discover-proper {

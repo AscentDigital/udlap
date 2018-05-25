@@ -77,6 +77,12 @@ nav{
 			    }
 			}
 			.has-sub{
+				&:hover{
+					border-left: 2px solid #FFF;
+				}
+				&:hover > .submenu, .submenu:hover{
+					display: block;
+				} 
 				.submenu{ 
 					display: none;
 					position: absolute;
