@@ -973,11 +973,6 @@
     margin: 0;
 }
 
-.facilities-list li:before {
-    content: "-";
-    padding-right: 8px;
-}
-
 @media (min-width: 768px) and (max-width: 1024px) {
 
 	.facilities-section .basic-block:before{

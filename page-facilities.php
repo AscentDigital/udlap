@@ -84,39 +84,6 @@
             // no layouts found
         endif;
         ?> 
-      <div class="facilities-list">
-        <div class ="list-title">BUILDING OR FACILITY CATEGORY</div>
-        <ul>
-          <li>Building or facility name</li>
-          <li>Building or facility name</li>
-          <li>Building or facility name</li>
-          <li>Building or facility name</li>
-          <li>Building or facility name</li>
-          <li>Building or facility name</li>
-        </ul>
-      </div>
-      <div class="facilities-list">
-        <h1>BUILDING OR FACILITY CATEGORY</h1>
-        <ul>
-          <li>Building or facility name</li>
-          <li>Building or facility name</li>
-          <li>Building or facility name</li>
-          <li>Building or facility name</li>
-          <li>Building or facility name</li>
-          <li>Building or facility name</li>
-        </ul>
-      </div>
-      <div class="facilities-list">
-        <h1>BUILDING OR FACILITY CATEGORY</h1>
-        <ul>
-          <li>Building or facility name</li>
-          <li>Building or facility name</li>
-          <li>Building or facility name</li>
-          <li>Building or facility name</li>
-          <li>Building or facility name</li>
-          <li>Building or facility name</li>
-        </ul>
-      </div>
     </section>
 <?php
 	get_footer();
