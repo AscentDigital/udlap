@@ -1,0 +1,83 @@
+.update{
+	&-proper{
+		position: relative;
+		padding: 100px 0px;
+		&:before{
+			left: 85px;
+			@include mobile(){
+				left: 20px;
+			}
+		}
+		@include mobile(){
+			    padding: 100px 20px;
+		}
+	}
+	&-block{
+		position: relative;
+		padding: 30px 20px;
+		border-bottom: 20px solid $teal;
+		box-shadow: 0px 0px 35px rgba(0,0,0,0.3); 
+		margin-bottom: 50px;
+		@include mobile(){
+			    width: 100%;
+    		margin: 0px;
+    		margin-bottom: 50px;
+		}
+		.picture-block{
+			position: relative;
+			width: 100%;
+			min-height: 200px;
+			background:{
+				size: cover;
+				position: top center;
+			}
+			> img{
+				position: absolute;
+				top: -10px; 
+				left: -10px;
+				height: 28px;
+				width: 28px;
+			}
+		}
+		.copy-block{
+			.title{
+				font-size: 30px;
+			    text-align: left;
+			    line-height: 30px;
+			    font-family: $rale;
+			    font-weight: 800;
+			    color: #000;
+			    margin-top: 20px;
+			}
+			.date{
+				position: relative;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				color: #7F7F7F;
+			    font-size: 16px;
+			    text-align: left;
+			    line-height: 24px;
+			    font-family: $rale;
+			    font-weight: 500;
+			    margin-bottom: 20px;
+			    &:before{
+			    	position: absolute;
+			    	content: '';
+			    	background: $teal;
+			    	width: 80px;
+			    	height: 5px;
+			    	bottom: 0px;
+			    	left: 0px;
+			    }
+			}
+			.copy{
+				color: #7F7F7F;
+			    font-size: 16px;
+			    text-align: justify;
+			    line-height: 24px;
+			    font-family: $rale;
+			    font-weight: 400;
+			}
+		}
+	}
+}
