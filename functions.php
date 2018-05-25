@@ -3,7 +3,7 @@
 		wp_enqueue_style('style', get_stylesheet_uri());
 		wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
 		wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-		wp_enqueue_style('styles', get_template_directory_uri() . '/assets/css/styles.css', array(''), '1.2');
+		wp_enqueue_style('styles', get_template_directory_uri() . '/assets/css/styles.css', array(), '1.2');
 		wp_enqueue_style('styles-extended', get_template_directory_uri() . '/assets/css/styles-extended.css');
 		wp_enqueue_style('lightbox', get_template_directory_uri() . '/assets/css/lightbox.css');
 		wp_enqueue_script('jquery-ui', 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js', array('jquery'), '1.0.0', true);
