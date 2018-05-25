@@ -101,3 +101,33 @@ a{
 	background-size: contain;
 	z-index: 4000;
 }
+
+.udlap-pagination{
+	display: flex;
+	align-items: baseline;
+	a{
+		font-size: 16px;
+    	line-height: 19px;
+    	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    	height: 30px;
+    	width: 30px;
+    	border-color: #7F7F7F;
+    	background-color: #C9C9C7;
+    	margin-right: 20px;
+    	color: #000;
+    	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	&.active{
+		background: $orange;
+		color: #FFF;
+	}
+	&:hover{
+		background: $orange;
+		color: #FFF;
+	}
+	}
+}
