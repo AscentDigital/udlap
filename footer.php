@@ -11,7 +11,7 @@
     <a href="./programs.html">Programs</a>
     <a href="./student-life.html">Student Life</a>
     <a href="./financial-aid.html">Financial Aid</a>
-    <a href="<?php echo get_site_url(); ?>/updates.html">Updates</a>
+    <a href="<?php echo get_site_url(); ?>/updates/">Updates</a>
     <a href="./contact.html">Contact</a>
   </div>  
   <div class="footer">
