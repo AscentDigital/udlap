@@ -35,11 +35,36 @@
 	function udlap_contact_form_process() {
     	$name = $_POST['name'];
 		$email = $_POST['email'];
-		$message = $_POST['message'];
 
 		$body = 'Full Name: ' . $name . "\r\n";
 		$body .= 'Email Address: ' . $email . "\r\n";
-		$body .= 'Message: ' . $message;
+		if(isset($_POST['message'])){
+			$body .= 'Message: ' . $_POST['message'] . "\r\n";
+		}
+
+		if(isset($_POST['phone'])){
+			$body .= 'Phone: ' . $_POST['phone'] . "\r\n";
+		}
+
+		if(isset($_POST['citystate'])){
+			$body .= 'City and State: ' . $_POST['citystate'] . "\r\n";
+		}
+
+		if(isset($_POST['interest'])){
+			$body .= 'What is your interest of study?: ' . $_POST['interest'] . "\r\n";
+		}
+
+		if(isset($_POST['study'])){
+			$body .= 'Where would you like to pursue your area of study?: ' . $_POST['study'] . "\r\n";
+		}
+
+		if(isset($_POST['major'])){
+			$body .= 'Major(s) of interest: ' . $_POST['major'] . "\r\n";
+		}
+
+		if(isset($_POST['campus'])){
+			$body .= 'Are you interested in visiting our campus?: ' . $_POST['campus'] . "\r\n";
+		}
 
 		$success = 'false';
 		if(wp_mail(get_option('udlap_recipient_email', ''), 'Contact Form', $body)){
