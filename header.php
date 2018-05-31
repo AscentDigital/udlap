@@ -148,11 +148,10 @@
         </div>
       </div>
       <?php }else{ ?>
-      <div class="headline banner-headline">
-          <div class="container">
-            <img src="./assets/img/arrows1.jpg" alt="">
-            <div class="title"><?php the_title(); ?></div>
-          </div>
-      </div>
+      <div class="headline">
+            <div class ="container head-arrow">
+               <p><?php the_title(); ?></p> 
+            </div>
+        </div>
       <?php } ?>
     </header>

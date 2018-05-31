@@ -73,6 +73,7 @@
       </div>
       <?php $featuredbrochure = get_field('featured_brochure'); 
       $file = $featuredbrochure['brochure_file'];
+      $b_image = $featuredbrochure['brochure_image'];
       ?>
       <!-- discover block 2 - downloads -->
       <div class="discover-block downloads-proper">
@@ -85,7 +86,7 @@
         <div class="downloads-block grid grid-md grid-right">
           <div class="brochure-proper">
             <a href="<?php echo $file['url']; ?>" class="brochure-block" download>
-              <img src="<?php echo $image['url']; ?>" alt="brochure">
+              <img src="<?php echo $b_image['url']; ?>" alt="brochure">
             </a> 
           </div>
           <a href="<?php echo get_site_url(); ?>/brochures/">More Brochures</a>
