@@ -36,7 +36,7 @@ p {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 	z-index: 1000;
-	margin-top:-63px;
+	margin-top:-56px;
 }
 .banner.default .headline p{
 	position: relative;
@@ -75,6 +75,7 @@ p {
 .accreditation-section{
 	position: relative;
 	margin-bottom: 150px;
+	text-align: center;
 }
 .videos-section{
 	position: relative;
@@ -89,6 +90,13 @@ p {
     position: relative;
     width: calc(100% - 150px);
     border: 3px solid #D4D3D3;
+    display: inline-block;
+}
+.basic-hr{
+	border: 3px solid #2E8683;
+    width: 70px;
+    margin-top: 15px;
+    margin-bottom: 0;
 }
 .institution-section .basic-block:before{
 	content: '';
@@ -226,7 +234,7 @@ p {
 	background-repeat: no-repeat;
 	background-position: center;
 	top: -25px;
-	left: 50%;
+	left: calc(50% - 38px);
 }
 .accreditation-section .basic-block .text-box:before{
 	position: absolute;
@@ -238,11 +246,11 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     bottom:20px;
-	left: 50.55%;
+	left: calc(50% - 28px);
 }
 .accreditation-section .basic-block .text-box{
 	  position: relative;
-	  padding: 55px 130px 50px 200px;
+	  padding: 55px 130px 50px 130px;
 }
 .accreditation-section .basic-block .black-text{
 	color: #3D3D3D;
@@ -326,17 +334,17 @@ p {
 	line-height: 24px;
     color: #3B3A3A;
     font-size: 15px;
-    text-align: justify;
+    text-align: center;
     font-family: raleway, sans-serif;
     font-weight: 400;
 }
 .accreditation-section img{
 	width: 128px;
 	height: 128px;
-	left: 45%;
     background-color: #C1C0C2;
     border-radius: 50%;
     position: relative;
+    display: inline-block;
 }
 
 .videos-section:before{
