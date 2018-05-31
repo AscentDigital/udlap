@@ -2,7 +2,7 @@
 	get_header();
   the_post();
   $image1 = get_field('image1');
-  $file = $get_field['map_file'];
+  $file = get_field('map_file');
 ?>
 <section class="white-block container campus-section">
       <div class="campus-pad">
