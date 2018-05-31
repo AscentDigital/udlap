@@ -26,10 +26,10 @@
     </div> 
     <div class="social-block-menu">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/study.png" alt="">
-      <a href="<?php echo get_option('udlap_facebook', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons1.png" alt=""></a>
-      <a href="<?php echo get_option('udlap_instagram', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons2.png" alt=""></a>
-      <a href="<?php echo get_option('udlap_twitter', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons3.png" alt=""></a>
-      <a href="<?php echo get_option('udlap_youtube', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons4.png" alt=""></a>
+      <a href="<?php echo get_option('udlap_facebook', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons1.png" target = "_blank" alt=""></a>
+      <a href="<?php echo get_option('udlap_instagram', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons2.png" target = "_blank" alt=""></a>
+      <a href="<?php echo get_option('udlap_twitter', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons3.png" target = "_blank" alt=""></a>
+      <a href="<?php echo get_option('udlap_youtube', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons4.png" target = "_blank" alt=""></a>
     </div>
     <div class="nav-block"> 
       <?php  
@@ -78,7 +78,20 @@
     </div>
 
     <!-- Header -->
-    <header class=" <?php if(is_front_page()){ echo 'banner wide home'; }else { echo 'banner default inner'; } ?>">
+    <header class=" <?php if(is_front_page()){ echo 'banner wide home'; }else { echo 'banner default inner'; } ?>"  
+    <?php if(is_front_page()){ 
+      $thumb_url = wp_get_attachment_image_src(get_post_thumbnail_id(), '', false);
+      $bg = $thumb_url[0];
+    ?> 
+    style = "background: transparent url(<?php echo $bg; ?>) no-repeat left top;
+    background-size: cover;
+    background-position: center center;" 
+    <?php }else{ ?> 
+    style = "background: transparent url(<?php echo get_template_directory_uri(); ?>/assets/img/topbg.jpg?crc=4929004826) no-repeat left top;
+    background-size: cover;
+    background-position: center center;" 
+    <?php } ?>
+    >
       <nav class="container">
         <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logotop.png" alt="UDLAP Logo"></div>
         <div class="nav-proper">
@@ -135,10 +148,11 @@
         </div>
       </div>
       <?php }else{ ?>
-      <div class="headline">
-            <div class ="container head-arrow">
-               <p><?php the_title(); ?></p> 
-            </div>
-        </div>
+      <div class="headline banner-headline">
+          <div class="container">
+            <img src="./assets/img/arrows1.jpg" alt="">
+            <div class="title"><?php the_title(); ?></div>
+          </div>
+      </div>
       <?php } ?>
     </header>
