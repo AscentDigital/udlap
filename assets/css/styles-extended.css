@@ -79,11 +79,11 @@ p {
 }
 .videos-section{
 	position: relative;
-	margin-bottom: 80px;
+	margin-bottom: 150px;
 }
 .galleries-section{
 	position: relative;
-	margin-bottom: 80px;
+	margin-bottom: 150px;
 }
 .basic-block{
 	margin-top: 80px;
@@ -359,7 +359,7 @@ p {
     margin-top: 10px;
 }
 .videos-section .video-box {
-	min-height: 300px;
+	min-height: 420px;
     background: #FFF;
     box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
     margin-top: 80px;
@@ -445,7 +445,7 @@ p {
     margin-top: 10px;
 }
 .galleries-section .gallery-box {
-	min-height: 300px;
+	min-height: 420px;
     background: #FFF;
     box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
     margin-top: 80px;
@@ -477,7 +477,7 @@ p {
 	z-index: 1001;
 }
 .galleries-section .text-box{
-	padding: 15px 80px 15px 80px;
+	padding: 15px 20px 15px 20px;
 }
 
 .galleries-section .text-box .gallery-title{

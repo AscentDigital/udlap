@@ -2,6 +2,7 @@
 	get_header();
   the_post();
   $image1 = get_field('image1');
+  $file = $get_field['map_file'];
 ?>
 <section class="white-block container campus-section">
       <div class="campus-pad">
@@ -20,7 +21,7 @@
         <div class="map-block">
           <div class="map-content">
             <a href="<?php echo $image1['url']; ?>" target ="_blank" class ="fullscreen">Click to View Fullscreen</a>
-            <a href="<?php echo $image1['url']; ?>" target ="_blank" class ="download" download>Click to Download Map</a>
+            <a href="<?php echo $file['url']; ?>" target ="_blank" class ="download">Click to Download Map</a>
           </div>
         </div>
       </div>
