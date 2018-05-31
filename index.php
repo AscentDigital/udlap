@@ -22,7 +22,7 @@
           <div class="desc">
               <?php echo $featuredbox1['featured_details'] ?>
           </div> 
-          <a href="#">More</a>
+          <a href="<?php echo $featuredbox1['featured_link'] ?>" target = "_blank">More</a>
         </div>
         <div>
           <img src="<?php echo $image2['url'];?>" alt="">
@@ -32,7 +32,7 @@
           <div class="desc">
             <?php echo $featuredbox2['featured_details'] ?>
           </div> 
-          <a href="#">More</a>
+          <a href="<?php echo $featuredbox2['featured_link'] ?>" target = "_blank">More</a>
         </div>
         <div>
           <img src="<?php echo $image3['url'];?>" alt="">
@@ -42,7 +42,7 @@
           <div class="desc">
             <?php echo $featuredbox3['featured_details'] ?>
           </div> 
-          <a href="#">More</a>
+          <a href="<?php echo $featuredbox3['featured_link'] ?>" target = "_blank">More</a>
         </div>
       </div>
     </section>
