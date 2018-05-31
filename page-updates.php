@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-md-8">
                   <div class="copy-block">
-                    <a href="#">
+                    <a href="<?php the_permalink(); ?>">
                       <div class="title"><?php the_title(); ?></div>
                     </a>
                     <div class="date"><?php echo get_the_date('F j, Y'); ?></div>
