@@ -25,6 +25,35 @@
             </div>    
          </div>  
        </div> 
+       <?php  
+       if( have_rows('listing') ):
+       while ( have_rows('listing') ) : the_row();
+       ?>
+       <div class="list-block">
+          <div class ="list-block-title"><?php echo get_sub_field('listing_title'); ?></div>
+          <ul>
+            <?php  
+            if( have_rows('listing_details') ):
+            while ( have_rows('listing_details') ) : the_row();
+            ?>
+            <li>
+              <div class ="list-block-main"><?php echo get_sub_field('main_detail'); ?></div>
+              <div class ="list-block-sub"><?php echo get_sub_field('sub_detail'); ?></div>
+            </li>
+            <?php 
+            endwhile;
+            else :
+                // no layouts found
+            endif;
+            ?>
+          </ul>
+       </div>
+        <?php 
+        endwhile;
+        else :
+            // no layouts found
+        endif;
+        ?> 
 </section>
 <?php
 	get_footer();

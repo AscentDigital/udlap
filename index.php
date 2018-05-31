@@ -120,8 +120,8 @@
               </div>
             </div> 
             <div class="images-block" data-items="2">
-              <img src="<?php echo $gallery_image1['url']; ?>" alt="">
-              <img src="<?php echo $gallery_image2['url']; ?>" alt="">
+              <a href="<?php echo get_site_url(); ?>/galleries/"><img src="<?php echo $gallery_image1['url']; ?>" alt=""></a>
+              <a href="<?php echo get_site_url(); ?>/galleries/"><img src="<?php echo $gallery_image2['url']; ?>" alt=""></a>
             </div> 
           </div> 
           <div class="gallery-deco"></div>  
