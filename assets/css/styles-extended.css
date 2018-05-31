@@ -97,6 +97,8 @@ p {
     width: 70px;
     margin-top: 15px;
     margin-bottom: 0;
+    display: inline-block;
+    margin-left: -25px;
 }
 .institution-section .basic-block:before{
 	content: '';
