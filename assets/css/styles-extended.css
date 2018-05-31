@@ -262,14 +262,6 @@ p {
     font-weight: 900;
 }
 
-.accreditation-section .basic-block .black-text:before{
-	content: '';
-	position: absolute;
-	border: 3px solid #2E8683;
-	width:70px;    
-	margin-top: 60px;
-	margin-left: 140px;
-}
 .accreditation-section .basic-block .details-text{
 	line-height: 30px;
     color: #7F7F7F;
