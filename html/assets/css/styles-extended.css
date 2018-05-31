@@ -1257,7 +1257,7 @@ p {
     margin-left: 20px;
 }
 .bachelor-proper .panel-course .panel-body{
-	padding-left: 45px;
+	padding-left: 65px;
 	padding-right: 45px;
 	height: 300px;
 }
@@ -1272,7 +1272,7 @@ p {
 	  margin: 0;
 }
 .bachelor-proper .panel-course .panel-body li {
-	  width: 200px;
+	  width: 180px;
 	  line-height: 25px;
 	  text-align: left;
 	  color: #7F7F7F;
@@ -1284,6 +1284,7 @@ p {
 	  content: "■ ";
 	  color: #2E8683;
 	  font-size: 30px;
+	  margin-left: -25px;
 }
 /* POST CSS*/
 
