@@ -4,35 +4,43 @@
 	get_template_part('includes/why-udlap', 'section');
 ?>
 <!-- Tres Imagenes -->
+      <?php 
+      $featuredbox1 = get_field('featured_box_1');
+      $image1 = $featuredbox1['featured_image'];
+      $featuredbox2 = get_field('featured_box_2');
+      $image2 = $featuredbox2['featured_image'];
+      $featuredbox3 = get_field('featured_box_3');
+      $image3 = $featuredbox3['featured_image'];
+      ?>
       <section class="gray-block explore-proper">
         <div class="container explore-block">
-          <div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tresfotos01.jpg" alt="">
-            <div class="title">
-              INTERNATIONAL <br>PROGRAMS
-            </div> 
-            <div class="desc">
-              Lorem ipsum dolor sit amet,<br>eampartiendo expetendis. Ei <br>tacimates aliquando.
-            </div> 
-            <a href="#">More</a>
-          </div>
-          <div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tresfotos02.jpg" alt="">
-            <div class="title">
-             TAKE A LOOK TO <br>OUR CAMPUS
-           </div> 
-           <div class="desc">
-            Lorem ipsum dolor sit amet,<br>eampartiendo expetendis. Ei <br>tacimates aliquando.
+        <div>
+          <img src="<?php echo $image1['url'];?>" alt="">
+          <div class="title">
+              <?php echo $featuredbox1['featured_title'] ?>
+          </div> 
+          <div class="desc">
+              <?php echo $featuredbox1['featured_details'] ?>
           </div> 
           <a href="#">More</a>
         </div>
         <div>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tresfotos03.jpg" alt="">
+          <img src="<?php echo $image2['url'];?>" alt="">
           <div class="title">
-            FINANCIAL<br>AID
+             <?php echo $featuredbox2['featured_title'] ?>
           </div> 
           <div class="desc">
-            Lorem ipsum dolor sit amet, <br>eampartiendo expetendis. Ei <br>tacimates aliquando.
+            <?php echo $featuredbox2['featured_details'] ?>
+          </div> 
+          <a href="#">More</a>
+        </div>
+        <div>
+          <img src="<?php echo $image3['url'];?>" alt="">
+          <div class="title">
+            <?php echo $featuredbox3['featured_title'] ?>
+          </div> 
+          <div class="desc">
+            <?php echo $featuredbox3['featured_details'] ?>
           </div> 
           <a href="#">More</a>
         </div>
@@ -42,19 +50,7 @@
 
     <!-- Mas UDLAP -->
     <section class="white-block container discover-proper">  
-      <?php  
-            $args = array(
-                'post_type' => 'videos',
-                'posts_per_page' => 1,
-                'order' => 'DESC',
-                'orderby' => 'post_date'
-            );
-            $query = new WP_Query($args);
-            if($query->have_posts()){
-              while($query->have_posts()){
-                $query->the_post();
-                $image = get_field('thumbnail');
-            ?>
+      <?php $featuredvideo = get_field('featured_video'); ?>
       <!-- discover block 1 - sneakpeek -->
       <div class="discover-block sneakpeek-proper">
         <div class="sneakpeek-block grid grid-md grid-left"> 
@@ -63,37 +59,20 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mas.jpg" alt=""> Video Tour
             </div>
             <div class="headline">
-              <?php the_title(); ?>
+              <?php echo $featuredvideo['video_title'] ?>
             </div>
             <div class="copy">
-              <?php the_content(); ?>  
+              <?php echo $featuredvideo['video_details'] ?>
             </div>
             <a href="<?php echo get_site_url(); ?>/videos/">More Videos</a>
           </div> 
         </div>
         <div class="video-block">
-          <iframe width="100%" height="100%" src="<?php echo get_field('youtube_link'); ?>" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+          <iframe width="100%" height="100%" src="<?php echo $featuredvideo['video_url'] ?>" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-      <?php
-        }
-        }
-        wp_reset_query();
-      ?>
-
-      <?php  
-            $args = array(
-                'post_type' => 'brochures',
-                'posts_per_page' => 1,
-                'order' => 'DESC',
-                'orderby' => 'post_date'
-            );
-            $query = new WP_Query($args);
-            if($query->have_posts()){
-              while($query->have_posts()){
-                $query->the_post();
-                $image = get_field('image');
-                $file = get_field('file');
+      <?php $featuredbrochure = get_field('featured_brochure'); 
+      $file = $featuredbrochure['brochure_file'];
       ?>
       <!-- discover block 2 - downloads -->
       <div class="discover-block downloads-proper">
@@ -112,18 +91,16 @@
           <a href="<?php echo get_site_url(); ?>/brochures/">More Brochures</a>
         </div>
       </div>
-      <?php
-        }
-        }
-        wp_reset_query();
-      ?>
-
     </section><!-- Mas UDLAP -->
 
 
 
 
     <!-- Galleria -->
+    <?php $featuredgallery = get_field('featured_gallery'); 
+      $gallery_image1 = $featuredgallery['image_1']; 
+      $gallery_image2 = $featuredgallery['image_2'];
+      ?>
     <section class="gray-block gallery more-below"> 
       <div class="container">
 
@@ -134,17 +111,17 @@
               <div class="copy-block">
                 <a href="<?php echo get_site_url(); ?>/galleries/">
                   <div class="headliner">
-                    Picture <br>Galleries
+                    <?php echo $featuredgallery['gallery_title'] ?>
                   </div>
                 </a>
                 <div class="copy">
-                  Lorem ipsum dolor sit amet, eam cu partiendo expetendis. Ei tacimates aliquando eam. Lorem ipsum dolor sit amet.
+                  <?php echo $featuredgallery['gallery_details'] ?>
                 </div>
               </div>
             </div> 
             <div class="images-block" data-items="2">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/picgall1.jpg" alt="">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/picgall2.jpg" alt="">
+              <img src="<?php echo $gallery_image1['url']; ?>" alt="">
+              <img src="<?php echo $gallery_image2['url']; ?>" alt="">
             </div> 
           </div> 
           <div class="gallery-deco"></div>  
