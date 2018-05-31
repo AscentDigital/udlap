@@ -103,7 +103,6 @@
       ?>
     <section class="gray-block gallery more-below"> 
       <div class="container">
-
         <!-- discover block 3 - gallery proper -->
         <div class="discover-block gallery-proper">
           <div class="gallery-block"> 
