@@ -564,7 +564,7 @@ p {
     text-align: center;
     font-family: raleway, sans-serif;
     font-weight: 400;
-    padding-top: 30px;
+    padding-top: 10px;
 	margin-bottom: 50px;
 	margin-right: 13px;
 }
@@ -623,13 +623,13 @@ p {
     text-align: center;
     font-family: raleway, sans-serif;
     font-weight: 400;
-    padding-top: 30px;
+    padding-top: 10px;
 	margin-bottom: 50px;
 	margin-right: 13px;
 }
 .gallery-section .image-box{
 	position: relative;
-	margin-top:-350px;
+	margin-top:-320px;
 }
 .gallery-section .image-box img{
 	width: 100%;
