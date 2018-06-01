@@ -7,12 +7,11 @@
   </div>
   <div class="f-nav container">
     <a href="<?php echo get_site_url(); ?>">Home</a>
-    <a href="./about.html">About</a>
-    <a href="./programs.html">Programs</a>
-    <a href="./student-life.html">Student Life</a>
-    <a href="./financial-aid.html">Financial Aid</a>
+    <a href="<?php echo get_site_url(); ?>/our-institution/">Our Institution</a>
+    <a href="<?php echo get_site_url(); ?>/summer-immersion/">Summer Immersion</a>
+    <a href="<?php echo get_site_url(); ?>/financial-aid/">Financial Aid</a>
     <a href="<?php echo get_site_url(); ?>/updates/">Updates</a>
-    <a href="./contact.html">Contact</a>
+    <a href="<?php echo get_site_url(); ?>/contact/">Contact</a>
   </div>  
   <div class="footer">
     <p><?php _e('Derechos Reservados © 2018 Universidad de las Américas Puebla.'); ?></p>

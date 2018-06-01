@@ -222,6 +222,9 @@ p {
     font-family: raleway, sans-serif;
     font-weight: 400;
 }
+.institution-section .content-text{
+	margin-top: 50px;
+}
 .accreditation-section .basic-block{
 	margin-left: auto;
 	margin-right: auto;
@@ -976,6 +979,9 @@ p {
     padding: 0;
     margin: 0;
 }
+.facilities-list ul li p {
+    font-family: raleway, sans-serif;
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
@@ -1275,12 +1281,14 @@ p {
 }
 .bachelor-proper .panel-course .panel-body li {
 	  width: 180px;
-	  line-height: 25px;
+	  line-height: 18px;
+	  margin-bottom: 5px;
 	  text-align: left;
 	  color: #7F7F7F;
 	  font-size: 15px;
 	  font-family: raleway, sans-serif;
 	  font-weight: 700;
+	  margin-bottom: 8px;
 }
 .bachelor-proper .panel-course .panel-body li::before {
 	  content: "■ ";
