@@ -96,10 +96,10 @@
         <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logotop.png" alt="UDLAP Logo"></div>
         <div class="nav-proper">
           <div class="social-block-menu">
-            <a href="<?php echo get_option('udlap_facebook', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons1.png" alt="" target ="_blank"></a>
-            <a href="<?php echo get_option('udlap_instagram', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons2.png" alt="" target ="_blank"></a>
-            <a href="<?php echo get_option('udlap_twitter', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons3.png" alt="" target ="_blank"></a>
-            <a href="<?php echo get_option('udlap_youtube', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons4.png" alt="" target ="_blank"></a>
+            <a href="<?php echo get_option('udlap_facebook', ''); ?>" target ="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons1.png" alt=""></a>
+            <a href="<?php echo get_option('udlap_instagram', ''); ?>" target ="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons2.png" alt=""></a>
+            <a href="<?php echo get_option('udlap_twitter', ''); ?>" target ="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons3.png" alt=""></a>
+            <a href="<?php echo get_option('udlap_youtube', ''); ?>" target ="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons4.png" alt=""></a>
           </div>
           <div class="nav-block"> 
             <?php
