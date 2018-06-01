@@ -9,6 +9,7 @@
             <div class="black-text">
               <?php the_title(); ?>
             </div>
+            <hr class ="basic-hr">
             <p class = "video-date"><?php echo get_field('date'); ?></p>
           </div>
         </div>
