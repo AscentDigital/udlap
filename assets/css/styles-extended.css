@@ -545,6 +545,7 @@ p {
 .video-section .basic-block .text-box{
 	  position: relative;
 	  padding: 35px 130px 50px 200px;
+	  text-align: center;
 }
 .video-section .basic-block .black-text{
 	line-height: 30px;
@@ -603,6 +604,7 @@ p {
 .gallery-section .basic-block .text-box{
 	  position: relative;
 	  padding: 35px 130px 50px 200px;
+	  text-align: center;
 }
 .gallery-section .basic-block .black-text{
 	line-height: 30px;
