@@ -1622,3 +1622,8 @@ p {
     color: #d9534f;
     font-weight: 400;
 }
+
+.orange-box{
+	color: #FF6500;
+    font-size: 30px;
+}

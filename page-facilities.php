@@ -63,7 +63,7 @@
        while ( have_rows('listing') ) : the_row();
        ?>
        <div class="facilities-list">
-          <div class ="list-title"><?php echo get_sub_field('listing_title'); ?></div>
+          <div class ="list-title"> <span class="orange-box">■ </span> <?php echo get_sub_field('listing_title'); ?></div>
           <ul>
             <?php  
             if( have_rows('listing_details') ):
