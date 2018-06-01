@@ -1626,4 +1626,7 @@ p {
 .orange-box{
 	color: #FF6500;
     font-size: 30px;
+    position: absolute;
+    margin-left: -23px;
+    margin-top: -3px;
 }
