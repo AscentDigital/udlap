@@ -1612,3 +1612,16 @@ p {
     color: #d9534f;
     font-weight: 400;
 }
+.panel-course .panel-footer {
+	background-color: #2E8683;
+}
+.panel-course .panel-footer a{
+	color: #FFF;
+	line-height: 30px;
+    font-size: 16px;
+    text-align: left;
+    font-family: raleway, sans-serif;
+    font-weight: 800;
+    margin-left: 30px;
+    border-radius: 0;
+}

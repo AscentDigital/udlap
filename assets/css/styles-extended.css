@@ -1203,7 +1203,6 @@ p {
 }
 .bachelor-proper .panel-course{
     box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
-    border-bottom: 40px solid #2E8683;
     border-radius: 0px;
     margin-bottom: 50px;
     width: calc(100% - 30px);
@@ -1273,8 +1272,9 @@ p {
 	  color: #7F7F7F;
 	  font-size: 15px;
 	  font-family: raleway, sans-serif;
-	  font-weight: 700;
+	  font-weight: 800;
 	  margin-bottom: 8px;
+	  text-transform: uppercase;
 }
 .bachelor-proper .panel-course .panel-body li::before {
 	  content: "■ ";
@@ -1615,4 +1615,26 @@ p {
     position: absolute;
     margin-left: -23px;
     margin-top: -3px;
+}
+.images-block a{
+	width: calc(100% / 2);
+}
+
+@media (max-width: 767px) {
+	.images-block a{
+		width: 100%;
+	}
+}
+.panel-course .panel-footer {
+	background-color: #2E8683;
+}
+.panel-course .panel-footer a{
+	color: #FFF;
+	line-height: 30px;
+    font-size: 16px;
+    text-align: left;
+    font-family: raleway, sans-serif;
+    font-weight: 800;
+    margin-left: 30px;
+    border-radius: 0;
 }
