@@ -92,7 +92,7 @@
                     <option value="Fall">Fall</option>
                   </select>
                 </div> 
-                <div class="input-proper custom-select">
+                <div class="input-proper custom-select major-sec">
                   <select name="major">
                     <option value="0">Major(s) of interest</option>
                     <option value="Architecture">Architecture</option>

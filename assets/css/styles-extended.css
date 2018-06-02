@@ -1638,3 +1638,7 @@ p {
     margin-left: 30px;
     border-radius: 0;
 }
+.major-sec .select-items {
+	height: 300px;
+	overflow: auto;
+}

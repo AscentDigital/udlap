@@ -49,6 +49,9 @@
                 ?> 
               </ul>
             </div>
+            <div class="panel-footer">
+              <a href="<?php echo get_sub_field('url'); ?>" target = "_blank">Visit School Catalog</a>
+            </div>
           </div>
         </div>
         <?php 
