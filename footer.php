@@ -1,9 +1,9 @@
 <footer>
   <div class="tagline">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/study.png" alt="">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/UDLAP_Studyinmexico.png" alt="">
   </div>
   <div class="f-logo">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logotop.png" alt="">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/UDLAP_Logo.png" alt="">
   </div>
   <div class="f-nav container">
     <a href="<?php echo get_site_url(); ?>">Home</a>
