@@ -140,7 +140,7 @@
               while ( have_rows('slider_section') ) : the_row();
               $gimage = get_sub_field('image');
               ?>
-              <div class="item active" style="<?php echo $gimage['url']; ?>">
+              <div class="item active" style="background-image: url(<?php echo $gimage['url']; ?>);">
                 <div class="overlay">
                   <div class="headline container">
                     <div class="text-center">
