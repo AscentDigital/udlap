@@ -25,11 +25,11 @@
       <i class="fa fa-times"></i>
     </div> 
     <div class="social-block-menu">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/study.png" alt="">
-      <a href="<?php echo get_option('udlap_facebook', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons1.png" target = "_blank" alt=""></a>
-      <a href="<?php echo get_option('udlap_instagram', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons2.png" target = "_blank" alt=""></a>
-      <a href="<?php echo get_option('udlap_twitter', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons3.png" target = "_blank" alt=""></a>
-      <a href="<?php echo get_option('udlap_youtube', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons4.png" target = "_blank" alt=""></a>
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/UDLAP_Studyinmexico.png" alt="">
+      <a href="<?php echo get_option('udlap_facebook', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/UDLAP_Facebook.png" target = "_blank" alt=""></a>
+      <a href="<?php echo get_option('udlap_instagram', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/UDLAP_Instagram.png" target = "_blank" alt=""></a>
+      <a href="<?php echo get_option('udlap_twitter', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/UDLAP_Twitter.png" target = "_blank" alt=""></a>
+      <a href="<?php echo get_option('udlap_youtube', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/UDLAP_Youtube.png" target = "_blank" alt=""></a>
     </div>
     <div class="nav-block"> 
       <?php  
@@ -80,7 +80,7 @@
     <!-- Header -->
     <header class=" <?php if(is_front_page()){ echo 'banner wide home'; }else { echo 'banner default inner'; } ?>">
       <nav class="container">
-        <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logotop.png" alt="UDLAP Logo"></div>
+        <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/UDLAP_Logo.png" alt="UDLAP Logo"></div>
         <div class="nav-proper">
           <div class="social-block-menu">
             <a href="<?php echo get_option('udlap_facebook', ''); ?>" target ="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/socialicons1.png" alt=""></a>

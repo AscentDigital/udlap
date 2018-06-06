@@ -4,7 +4,7 @@ p {
 .banner.default {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
-  background: transparent url(../img/topbg.jpg?crc=4929004826) no-repeat left top;
+  background: transparent url(../img/UDLAP_sello.jpg?crc=4929004826) no-repeat left top;
   background-size: cover;
   background-position: center center;
   display: flex;
