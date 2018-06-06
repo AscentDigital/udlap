@@ -24,6 +24,22 @@
     background-size: cover; 
 }
 
+.carousel-control.right{
+
+    background-image: none;
+    &:hover{
+        background-image: none;
+    }
+}
+.carousel-control.left{
+
+    background-image: none;
+    &:hover{
+        background-image: none;
+    }
+}
+
+
 
 /* carousel fullscreen - vertically centered caption*/
 

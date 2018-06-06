@@ -29,13 +29,14 @@
 		position: absolute;
 		z-index: 100;
 		width: 100%;
-		height: 383px;
+		// height: 383px;
+		    height: 200px;
 		background: -webkit-gradient(linear, center top, center bottom, color-stop(40%, #000000),to(rgba(0,0,0,0)));
 		background: -webkit-linear-gradient(top,#000000 40%,rgba(0,0,0,0) );
 		background: linear-gradient(to bottom,#000000 40%,rgba(0,0,0,0) );
 		filter: alpha(opacity=80) progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF000000, endColorstr=#00000000, GradientType=0);
 		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80) progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF000000', endColorstr='#00000000', GradientType=0)";
-		opacity: 0.8;
+		opacity: 0.4;
 		top: 0px;
 		left: 0px;
 	}

@@ -422,6 +422,20 @@ a:hover {
   background-size: cover;
 }
 
+.carousel-control.right {
+  background-image: none;
+}
+.carousel-control.right:hover {
+  background-image: none;
+}
+
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-control.left:hover {
+  background-image: none;
+}
+
 /* carousel fullscreen - vertically centered caption*/
 .carousel-fullscreen .carousel-caption {
   top: 50%;
@@ -552,12 +566,12 @@ a:hover {
   position: absolute;
   z-index: 100;
   width: 100%;
-  height: 383px;
+  height: 200px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #000000), to(transparent));
   background: linear-gradient(to bottom, #000000 40%, transparent);
   filter: alpha(opacity=80) progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF000000, endColorstr=#00000000, GradientType=0);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80) progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF000000', endColorstr='#00000000', GradientType=0)";
-  opacity: 0.8;
+  opacity: 0.4;
   top: 0px;
   left: 0px;
 }
@@ -2487,4 +2501,5 @@ footer .footer p {
   line-height: 17px;
   word-wrap: break-word;
 }
+
 /*# sourceMappingURL=styles.css.map */
