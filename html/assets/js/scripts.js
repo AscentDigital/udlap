@@ -57,3 +57,4 @@ $(document).mouseup(function(e) {
 $('.mobile-nav-close-trigger').on('click', function(){
     hideMobileNav();
 });
+
