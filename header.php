@@ -136,8 +136,8 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <?php  
-              if( have_rows('degree') ):
-              while ( have_rows('degree') ) : the_row();
+              if( have_rows('slider_section') ):
+              while ( have_rows('slider_section') ) : the_row();
               $gimage = get_sub_field('image');
               ?>
               <div class="item active" style="<?php echo $gimage['url']; ?>">
