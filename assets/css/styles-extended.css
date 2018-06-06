@@ -371,7 +371,7 @@ p {
 	position: relative;
 	min-height: 420px;
     padding: 40px 45px 0px 40px;
-    border-bottom: 40px solid #2E8683;
+    border-bottom: 20px solid #2E8683;
 }
 
 .videos-section .video-thumbnail .video{
@@ -457,7 +457,7 @@ p {
 	position: relative;
 	min-height: 420px;
     padding: 40px 45px 0px 40px;
-    border-bottom: 40px solid #2E8683;
+    border-bottom: 20px solid #2E8683;
 }
 
 .galleries-section .gallery-thumbnail .gallery{
