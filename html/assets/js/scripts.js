@@ -57,7 +57,7 @@ $(document).mouseup(function(e) {
 $('.mobile-nav-close-trigger').on('click', function(){
     hideMobileNav();
 });
-
+ 
 var x, i, j, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");
@@ -132,3 +132,4 @@ then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
 
 $('.select-items > div:first-child').hide();
+ 
