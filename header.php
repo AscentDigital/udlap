@@ -78,20 +78,7 @@
     </div>
 
     <!-- Header -->
-    <header class=" <?php if(is_front_page()){ echo 'banner wide home'; }else { echo 'banner default inner'; } ?>"  
-    <?php if(is_front_page()){ 
-      $thumb_url = wp_get_attachment_image_src(get_post_thumbnail_id(), '', false);
-      $bg = $thumb_url[0];
-    ?> 
-    style = "background: transparent url(<?php echo $bg; ?>) no-repeat left top;
-    background-size: cover;
-    background-position: center center;" 
-    <?php }else{ ?> 
-    style = "background: transparent url(<?php echo get_template_directory_uri(); ?>/assets/img/topbg.jpg?crc=4929004826) no-repeat left top;
-    background-size: cover;
-    background-position: center center;" 
-    <?php } ?>
-    >
+    <header class=" <?php if(is_front_page()){ echo 'banner wide home'; }else { echo 'banner default inner'; } ?>">
       <nav class="container">
         <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logotop.png" alt="UDLAP Logo"></div>
         <div class="nav-proper">
@@ -137,15 +124,51 @@
       </nav>
       <?php 
       if(is_front_page()){
-        $welcome = get_field('welcome_section');
       ?>
-      <div class="headline container">
-        <div class="text-center">
-          <span class="main-title"><?php echo $welcome['main_title']; ?></span>
-          <span class="main-title strong">
-            <?php echo $welcome['main_subtitle']; ?>
-          </span>
-        </div>
+      <div id="udlap-carousel" class="carousel slide carousel-fullscreen carousel-fade" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+            <li data-target="#udlap-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#udlap-carousel" data-slide-to="1"></li>
+            <li data-target="#udlap-carousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <?php  
+              if( have_rows('degree') ):
+              while ( have_rows('degree') ) : the_row();
+              $gimage = get_sub_field('image');
+              ?>
+              <div class="item active" style="<?php echo $gimage['url']; ?>">
+                <div class="overlay">
+                  <div class="headline container">
+                    <div class="text-center">
+                      <span class="main-title"><?php echo get_sub_field('main_title'); ?></span> <br>
+                      <span class="main-title strong">
+                        <?php echo get_sub_field('main_subtitle'); ?>
+                      </span>
+                    </div>
+                  </div> 
+                </div> 
+              </div>
+              <?php 
+              endwhile;
+              else :
+                  // no layouts found
+              endif;
+              ?> 
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#udlap-carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#udlap-carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
       </div>
       <?php }else{ ?>
       <div class="headline">
